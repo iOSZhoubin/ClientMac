@@ -12,7 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FirstPageViewController : NSViewController
 
-@property (strong,nonatomic) NSWindow *mainWC;
 
 @end
 

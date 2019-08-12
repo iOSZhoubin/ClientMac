@@ -8,97 +8,62 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="FirstPageViewController">
             <connections>
+                <outlet property="agreeInItem" destination="eJf-cq-nvi" id="yAh-ZZ-RUd"/>
+                <outlet property="checkupItem" destination="thT-fc-mbR" id="J8M-28-5bO"/>
+                <outlet property="loginItem" destination="crr-lx-URY" id="GTe-jr-uye"/>
+                <outlet property="registerItem" destination="gXI-ME-b4b" id="3Wn-Wh-LRf"/>
+                <outlet property="tabView" destination="p0r-wq-qdo" id="868-Md-82d"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="800" height="475"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="oHB-q1-24s">
-                    <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
-                    <view key="contentView" id="ahL-HF-86F">
-                        <rect key="frame" x="1" y="1" width="798" height="598"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pp6-ky-F9d">
-                                <rect key="frame" x="608" y="574" width="22" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="22" id="U8v-MZ-szc"/>
-                                    <constraint firstAttribute="height" constant="22" id="e33-zr-9m9"/>
-                                </constraints>
-                                <imageCell key="cell" enabled="NO" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="logo_2" id="KO2-ep-OF1"/>
-                            </imageView>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NVB-N6-Ry6">
-                                <rect key="frame" x="636" y="576" width="144" height="17"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="17" id="1fU-G1-MqP"/>
-                                    <constraint firstAttribute="width" constant="140" id="Vvo-el-0uA"/>
-                                </constraints>
-                                <textFieldCell key="cell" lineBreakMode="clipping" enabled="NO" title="捷普准入控制系统V6.0" id="VMz-XI-utQ">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ey5-4g-E66">
-                                <rect key="frame" x="150" y="502" width="22" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="radio" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="p8U-1R-ypt">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                            </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vku-6d-Gr8">
-                                <rect key="frame" x="402" y="502" width="22" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="radio" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="emz-2A-1nU">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                            </button>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cqH-yQ-GfD">
-                                <rect key="frame" x="186" y="503" width="97" height="17"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="用户名密码认证" id="HKh-5n-PGM">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ghf-6f-1qb">
-                                <rect key="frame" x="434" y="503" width="97" height="17"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="短信验证码认证" id="cfR-jg-Swj">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                        </subviews>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="NVB-N6-Ry6" secondAttribute="trailing" constant="20" id="G2Q-TL-S73"/>
-                            <constraint firstItem="Pp6-ky-F9d" firstAttribute="top" secondItem="ahL-HF-86F" secondAttribute="top" constant="2" id="QdW-nn-v2u"/>
-                            <constraint firstItem="NVB-N6-Ry6" firstAttribute="top" secondItem="ahL-HF-86F" secondAttribute="top" constant="5" id="dbp-pO-wQO"/>
-                            <constraint firstItem="NVB-N6-Ry6" firstAttribute="leading" secondItem="Pp6-ky-F9d" secondAttribute="trailing" constant="8" id="o1m-zo-dBn"/>
-                        </constraints>
-                    </view>
-                    <color key="borderColor" red="0.15686274510000001" green="0.60392156860000001" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <color key="fillColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
-                </box>
+                <tabView translatesAutoresizingMaskIntoConstraints="NO" id="p0r-wq-qdo">
+                    <rect key="frame" x="-7" y="-10" width="814" height="441"/>
+                    <font key="font" metaFont="system"/>
+                    <tabViewItems>
+                        <tabViewItem label="登录" identifier="" id="crr-lx-URY">
+                            <view key="view" id="5db-9r-jf2">
+                                <rect key="frame" x="10" y="33" width="794" height="395"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </view>
+                        </tabViewItem>
+                        <tabViewItem label="注册" identifier="" id="gXI-ME-b4b">
+                            <view key="view" id="OKq-XC-gOO">
+                                <rect key="frame" x="10" y="33" width="794" height="395"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </view>
+                        </tabViewItem>
+                        <tabViewItem label="安检" identifier="" id="thT-fc-mbR">
+                            <view key="view" id="gKB-cy-d47">
+                                <rect key="frame" x="10" y="33" width="794" height="395"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </view>
+                        </tabViewItem>
+                        <tabViewItem label="入网" identifier="" id="eJf-cq-nvi">
+                            <view key="view" id="6wR-te-hoT">
+                                <rect key="frame" x="10" y="33" width="794" height="395"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </view>
+                        </tabViewItem>
+                    </tabViewItems>
+                </tabView>
             </subviews>
             <constraints>
-                <constraint firstItem="oHB-q1-24s" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="6Or-13-Fk8"/>
-                <constraint firstAttribute="trailing" secondItem="oHB-q1-24s" secondAttribute="trailing" id="6xG-g0-TS5"/>
-                <constraint firstItem="oHB-q1-24s" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="N7S-WT-qTY"/>
-                <constraint firstAttribute="bottom" secondItem="oHB-q1-24s" secondAttribute="bottom" id="jls-SB-Vfa"/>
+                <constraint firstItem="p0r-wq-qdo" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="Vc9-jg-r8t"/>
+                <constraint firstAttribute="bottom" secondItem="p0r-wq-qdo" secondAttribute="bottom" id="WRl-ib-zPF"/>
+                <constraint firstItem="p0r-wq-qdo" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="50" id="XTj-EV-zpo"/>
+                <constraint firstAttribute="trailing" secondItem="p0r-wq-qdo" secondAttribute="trailing" id="i1L-ll-n9g"/>
             </constraints>
-            <point key="canvasLocation" x="183" y="99"/>
+            <point key="canvasLocation" x="167" y="9"/>
         </customView>
+        <viewController id="FcH-pH-b2m" customClass="LoginViewController"/>
+        <viewController id="xvo-C2-pss" customClass="RegisterViewController"/>
+        <viewController id="foY-To-hwa" customClass="CheckupViewController"/>
+        <viewController id="42W-VR-usZ" customClass="AgreeInternetViewController"/>
     </objects>
-    <resources>
-        <image name="logo_2" width="40" height="40"/>
-    </resources>
 </document>

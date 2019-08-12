@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39104210230168FD0032212F /* AFNHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3910420E230168FC0032212F /* AFNHelper.m */; };
 		39417A9522FAB8F600979FD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39417A9422FAB8F600979FD3 /* AppDelegate.m */; };
 		39417A9822FAB8F600979FD3 /* ClientMac.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39417A9622FAB8F600979FD3 /* ClientMac.xcdatamodeld */; };
 		39417A9A22FAB8F800979FD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39417A9922FAB8F800979FD3 /* Assets.xcassets */; };
@@ -14,14 +15,40 @@
 		39417AA022FAB8F800979FD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39417A9F22FAB8F800979FD3 /* main.m */; };
 		39417AAE22FABA8100979FD3 /* FirstPageWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39417AAC22FABA8100979FD3 /* FirstPageWindowController.m */; };
 		39417AAF22FABA8100979FD3 /* FirstPageWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39417AAD22FABA8100979FD3 /* FirstPageWindowController.xib */; };
-		39417AB322FABC0700979FD3 /* FirstPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39417AB122FABC0700979FD3 /* FirstPageViewController.m */; };
-		39417AB422FABC0700979FD3 /* FirstPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39417AB222FABC0700979FD3 /* FirstPageViewController.xib */; };
+		39AA4D2E2301071D008D8386 /* AgreeInternetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D2C2301071D008D8386 /* AgreeInternetViewController.m */; };
+		39AA4D2F2301071E008D8386 /* AgreeInternetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39AA4D2D2301071D008D8386 /* AgreeInternetViewController.xib */; };
+		39AA4D3323010733008D8386 /* CheckupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D3123010733008D8386 /* CheckupViewController.m */; };
+		39AA4D3423010733008D8386 /* CheckupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39AA4D3223010733008D8386 /* CheckupViewController.xib */; };
+		39AA4D3823010747008D8386 /* DeviceInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D3623010747008D8386 /* DeviceInfoViewController.m */; };
+		39AA4D3923010747008D8386 /* DeviceInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39AA4D3723010747008D8386 /* DeviceInfoViewController.xib */; };
+		39AA4D4E23010941008D8386 /* DateCalculater.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D4223010941008D8386 /* DateCalculater.m */; };
+		39AA4D4F23010941008D8386 /* CalenarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D4523010941008D8386 /* CalenarManager.m */; };
+		39AA4D5023010941008D8386 /* JumpKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D4823010941008D8386 /* JumpKeyChain.m */; };
+		39AA4D5123010941008D8386 /* SecurityNSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D4923010941008D8386 /* SecurityNSString.m */; };
+		39AA4D5223010941008D8386 /* JumpPublicAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D4C23010941008D8386 /* JumpPublicAction.m */; };
+		39AA4D5823011455008D8386 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D5623011455008D8386 /* LoginViewController.m */; };
+		39AA4D5923011455008D8386 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39AA4D5723011455008D8386 /* LoginViewController.xib */; };
+		39AA4D6223013A2C008D8386 /* FirstPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39AA4D5F23013A2B008D8386 /* FirstPageViewController.xib */; };
+		39AA4D6323013A2C008D8386 /* FirstPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D6023013A2B008D8386 /* FirstPageViewController.m */; };
+		39AA4D67230145F0008D8386 /* CustomMessageCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D64230145F0008D8386 /* CustomMessageCellView.m */; };
+		39AA4D68230145F0008D8386 /* CustomMessageCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39AA4D65230145F0008D8386 /* CustomMessageCellView.xib */; };
+		39AA4D6C2301464A008D8386 /* HistoryRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D692301464A008D8386 /* HistoryRecordViewController.m */; };
+		39AA4D6D2301464A008D8386 /* HistoryRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39AA4D6A2301464A008D8386 /* HistoryRecordViewController.xib */; };
+		39AA4D7123014913008D8386 /* JumpRegistereViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D6E23014913008D8386 /* JumpRegistereViewController.m */; };
+		39AA4D7223014913008D8386 /* JumpRegistereViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39AA4D7023014913008D8386 /* JumpRegistereViewController.xib */; };
+		39AA4D792301495F008D8386 /* ChooseConmpanyWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D752301495E008D8386 /* ChooseConmpanyWindowController.m */; };
+		39AA4D7A2301495F008D8386 /* ChooseConmpanyWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39AA4D762301495E008D8386 /* ChooseConmpanyWindowController.xib */; };
+		39AA4D7B2301495F008D8386 /* JumpCompanyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D782301495E008D8386 /* JumpCompanyModel.m */; };
+		39AA4D8023014EAF008D8386 /* NewAccountWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D7E23014EAF008D8386 /* NewAccountWindowController.m */; };
+		39AA4D8123014EAF008D8386 /* NewAccountWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39AA4D7F23014EAF008D8386 /* NewAccountWindowController.xib */; };
 		67319F2A4AD2823BC0392C65 /* libPods-ClientMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1279FEB35219605FB2EFA1CD /* libPods-ClientMac.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0613167DB505C2F1A67B9858 /* Pods-ClientMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClientMac.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClientMac/Pods-ClientMac.release.xcconfig"; sourceTree = "<group>"; };
 		1279FEB35219605FB2EFA1CD /* libPods-ClientMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClientMac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3910420E230168FC0032212F /* AFNHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNHelper.m; sourceTree = "<group>"; };
+		3910420F230168FD0032212F /* AFNHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNHelper.h; sourceTree = "<group>"; };
 		39417A9022FAB8F600979FD3 /* ClientMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClientMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39417A9322FAB8F600979FD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		39417A9422FAB8F600979FD3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -34,9 +61,50 @@
 		39417AAB22FABA8100979FD3 /* FirstPageWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstPageWindowController.h; sourceTree = "<group>"; };
 		39417AAC22FABA8100979FD3 /* FirstPageWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstPageWindowController.m; sourceTree = "<group>"; };
 		39417AAD22FABA8100979FD3 /* FirstPageWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstPageWindowController.xib; sourceTree = "<group>"; };
-		39417AB022FABC0700979FD3 /* FirstPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstPageViewController.h; sourceTree = "<group>"; };
-		39417AB122FABC0700979FD3 /* FirstPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstPageViewController.m; sourceTree = "<group>"; };
-		39417AB222FABC0700979FD3 /* FirstPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstPageViewController.xib; sourceTree = "<group>"; };
+		39AA4D2B2301071D008D8386 /* AgreeInternetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AgreeInternetViewController.h; sourceTree = "<group>"; };
+		39AA4D2C2301071D008D8386 /* AgreeInternetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AgreeInternetViewController.m; sourceTree = "<group>"; };
+		39AA4D2D2301071D008D8386 /* AgreeInternetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgreeInternetViewController.xib; sourceTree = "<group>"; };
+		39AA4D3023010733008D8386 /* CheckupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckupViewController.h; sourceTree = "<group>"; };
+		39AA4D3123010733008D8386 /* CheckupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckupViewController.m; sourceTree = "<group>"; };
+		39AA4D3223010733008D8386 /* CheckupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckupViewController.xib; sourceTree = "<group>"; };
+		39AA4D3523010747008D8386 /* DeviceInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfoViewController.h; sourceTree = "<group>"; };
+		39AA4D3623010747008D8386 /* DeviceInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceInfoViewController.m; sourceTree = "<group>"; };
+		39AA4D3723010747008D8386 /* DeviceInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceInfoViewController.xib; sourceTree = "<group>"; };
+		39AA4D3F230107A5008D8386 /* PrefixPch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixPch.pch; sourceTree = "<group>"; };
+		39AA4D402301089B008D8386 /* InterfaceHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceHeader.h; sourceTree = "<group>"; };
+		39AA4D4223010941008D8386 /* DateCalculater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateCalculater.m; sourceTree = "<group>"; };
+		39AA4D4323010941008D8386 /* DateCalculater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateCalculater.h; sourceTree = "<group>"; };
+		39AA4D4423010941008D8386 /* CalenarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalenarManager.h; sourceTree = "<group>"; };
+		39AA4D4523010941008D8386 /* CalenarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalenarManager.m; sourceTree = "<group>"; };
+		39AA4D4623010941008D8386 /* JumpKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JumpKeyChain.h; sourceTree = "<group>"; };
+		39AA4D4723010941008D8386 /* JumpPublicAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JumpPublicAction.h; sourceTree = "<group>"; };
+		39AA4D4823010941008D8386 /* JumpKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JumpKeyChain.m; sourceTree = "<group>"; };
+		39AA4D4923010941008D8386 /* SecurityNSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityNSString.m; sourceTree = "<group>"; };
+		39AA4D4B23010941008D8386 /* SecurityNSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityNSString.h; sourceTree = "<group>"; };
+		39AA4D4C23010941008D8386 /* JumpPublicAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JumpPublicAction.m; sourceTree = "<group>"; };
+		39AA4D5523011455008D8386 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		39AA4D5623011455008D8386 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		39AA4D5723011455008D8386 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		39AA4D5F23013A2B008D8386 /* FirstPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstPageViewController.xib; sourceTree = "<group>"; };
+		39AA4D6023013A2B008D8386 /* FirstPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstPageViewController.m; sourceTree = "<group>"; };
+		39AA4D6123013A2C008D8386 /* FirstPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstPageViewController.h; sourceTree = "<group>"; };
+		39AA4D64230145F0008D8386 /* CustomMessageCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMessageCellView.m; sourceTree = "<group>"; };
+		39AA4D65230145F0008D8386 /* CustomMessageCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomMessageCellView.xib; sourceTree = "<group>"; };
+		39AA4D66230145F0008D8386 /* CustomMessageCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMessageCellView.h; sourceTree = "<group>"; };
+		39AA4D692301464A008D8386 /* HistoryRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryRecordViewController.m; sourceTree = "<group>"; };
+		39AA4D6A2301464A008D8386 /* HistoryRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryRecordViewController.xib; sourceTree = "<group>"; };
+		39AA4D6B2301464A008D8386 /* HistoryRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryRecordViewController.h; sourceTree = "<group>"; };
+		39AA4D6E23014913008D8386 /* JumpRegistereViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JumpRegistereViewController.m; sourceTree = "<group>"; };
+		39AA4D6F23014913008D8386 /* JumpRegistereViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JumpRegistereViewController.h; sourceTree = "<group>"; };
+		39AA4D7023014913008D8386 /* JumpRegistereViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JumpRegistereViewController.xib; sourceTree = "<group>"; };
+		39AA4D742301495E008D8386 /* ChooseConmpanyWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseConmpanyWindowController.h; sourceTree = "<group>"; };
+		39AA4D752301495E008D8386 /* ChooseConmpanyWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseConmpanyWindowController.m; sourceTree = "<group>"; };
+		39AA4D762301495E008D8386 /* ChooseConmpanyWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChooseConmpanyWindowController.xib; sourceTree = "<group>"; };
+		39AA4D772301495E008D8386 /* JumpCompanyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JumpCompanyModel.h; sourceTree = "<group>"; };
+		39AA4D782301495E008D8386 /* JumpCompanyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JumpCompanyModel.m; sourceTree = "<group>"; };
+		39AA4D7D23014EAF008D8386 /* NewAccountWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewAccountWindowController.h; sourceTree = "<group>"; };
+		39AA4D7E23014EAF008D8386 /* NewAccountWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewAccountWindowController.m; sourceTree = "<group>"; };
+		39AA4D7F23014EAF008D8386 /* NewAccountWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewAccountWindowController.xib; sourceTree = "<group>"; };
 		BFC45D143187783890E7D9BA /* Pods-ClientMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClientMac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClientMac/Pods-ClientMac.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +141,7 @@
 		39417A9222FAB8F600979FD3 /* ClientMac */ = {
 			isa = PBXGroup;
 			children = (
+				39AA4D41230108F8008D8386 /* Public */,
 				39417AA722FAB9DC00979FD3 /* class */,
 				39417A9322FAB8F600979FD3 /* AppDelegate.h */,
 				39417A9422FAB8F600979FD3 /* AppDelegate.m */,
@@ -82,6 +151,8 @@
 				39417A9F22FAB8F800979FD3 /* main.m */,
 				39417AA122FAB8F800979FD3 /* ClientMac.entitlements */,
 				39417A9622FAB8F600979FD3 /* ClientMac.xcdatamodeld */,
+				39AA4D3F230107A5008D8386 /* PrefixPch.pch */,
+				39AA4D402301089B008D8386 /* InterfaceHeader.h */,
 			);
 			path = ClientMac;
 			sourceTree = "<group>";
@@ -89,8 +160,15 @@
 		39417AA722FAB9DC00979FD3 /* class */ = {
 			isa = PBXGroup;
 			children = (
+				39AA4D7C23014EAF008D8386 /* NewAccount(注册用户) */,
+				39AA4D732301495E008D8386 /* Choose(选择部门) */,
 				39417AA822FAB9DC00979FD3 /* firstPage（首页） */,
+				39AA4D5423011441008D8386 /* Login（登录） */,
 				39417AAA22FAB9DC00979FD3 /* Register（注册） */,
+				39AA4D252301063D008D8386 /* History（历史记录） */,
+				39AA4D2423010636008D8386 /* AgreeIn（入网） */,
+				39AA4D2223010636008D8386 /* Checkup（安检） */,
+				39AA4D2323010636008D8386 /* Device（设备信息） */,
 			);
 			path = class;
 			sourceTree = "<group>";
@@ -101,9 +179,9 @@
 				39417AAB22FABA8100979FD3 /* FirstPageWindowController.h */,
 				39417AAC22FABA8100979FD3 /* FirstPageWindowController.m */,
 				39417AAD22FABA8100979FD3 /* FirstPageWindowController.xib */,
-				39417AB022FABC0700979FD3 /* FirstPageViewController.h */,
-				39417AB122FABC0700979FD3 /* FirstPageViewController.m */,
-				39417AB222FABC0700979FD3 /* FirstPageViewController.xib */,
+				39AA4D6123013A2C008D8386 /* FirstPageViewController.h */,
+				39AA4D6023013A2B008D8386 /* FirstPageViewController.m */,
+				39AA4D5F23013A2B008D8386 /* FirstPageViewController.xib */,
 			);
 			path = "firstPage（首页）";
 			sourceTree = "<group>";
@@ -111,8 +189,105 @@
 		39417AAA22FAB9DC00979FD3 /* Register（注册） */ = {
 			isa = PBXGroup;
 			children = (
+				39AA4D6F23014913008D8386 /* JumpRegistereViewController.h */,
+				39AA4D6E23014913008D8386 /* JumpRegistereViewController.m */,
+				39AA4D7023014913008D8386 /* JumpRegistereViewController.xib */,
 			);
 			path = "Register（注册）";
+			sourceTree = "<group>";
+		};
+		39AA4D2223010636008D8386 /* Checkup（安检） */ = {
+			isa = PBXGroup;
+			children = (
+				39AA4D3023010733008D8386 /* CheckupViewController.h */,
+				39AA4D3123010733008D8386 /* CheckupViewController.m */,
+				39AA4D3223010733008D8386 /* CheckupViewController.xib */,
+			);
+			path = "Checkup（安检）";
+			sourceTree = "<group>";
+		};
+		39AA4D2323010636008D8386 /* Device（设备信息） */ = {
+			isa = PBXGroup;
+			children = (
+				39AA4D3523010747008D8386 /* DeviceInfoViewController.h */,
+				39AA4D3623010747008D8386 /* DeviceInfoViewController.m */,
+				39AA4D3723010747008D8386 /* DeviceInfoViewController.xib */,
+			);
+			path = "Device（设备信息）";
+			sourceTree = "<group>";
+		};
+		39AA4D2423010636008D8386 /* AgreeIn（入网） */ = {
+			isa = PBXGroup;
+			children = (
+				39AA4D2B2301071D008D8386 /* AgreeInternetViewController.h */,
+				39AA4D2C2301071D008D8386 /* AgreeInternetViewController.m */,
+				39AA4D2D2301071D008D8386 /* AgreeInternetViewController.xib */,
+			);
+			path = "AgreeIn（入网）";
+			sourceTree = "<group>";
+		};
+		39AA4D252301063D008D8386 /* History（历史记录） */ = {
+			isa = PBXGroup;
+			children = (
+				39AA4D6B2301464A008D8386 /* HistoryRecordViewController.h */,
+				39AA4D692301464A008D8386 /* HistoryRecordViewController.m */,
+				39AA4D6A2301464A008D8386 /* HistoryRecordViewController.xib */,
+				39AA4D66230145F0008D8386 /* CustomMessageCellView.h */,
+				39AA4D64230145F0008D8386 /* CustomMessageCellView.m */,
+				39AA4D65230145F0008D8386 /* CustomMessageCellView.xib */,
+			);
+			path = "History（历史记录）";
+			sourceTree = "<group>";
+		};
+		39AA4D41230108F8008D8386 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				3910420F230168FD0032212F /* AFNHelper.h */,
+				3910420E230168FC0032212F /* AFNHelper.m */,
+				39AA4D4423010941008D8386 /* CalenarManager.h */,
+				39AA4D4523010941008D8386 /* CalenarManager.m */,
+				39AA4D4323010941008D8386 /* DateCalculater.h */,
+				39AA4D4223010941008D8386 /* DateCalculater.m */,
+				39AA4D4623010941008D8386 /* JumpKeyChain.h */,
+				39AA4D4823010941008D8386 /* JumpKeyChain.m */,
+				39AA4D4723010941008D8386 /* JumpPublicAction.h */,
+				39AA4D4C23010941008D8386 /* JumpPublicAction.m */,
+				39AA4D4B23010941008D8386 /* SecurityNSString.h */,
+				39AA4D4923010941008D8386 /* SecurityNSString.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		39AA4D5423011441008D8386 /* Login（登录） */ = {
+			isa = PBXGroup;
+			children = (
+				39AA4D5523011455008D8386 /* LoginViewController.h */,
+				39AA4D5623011455008D8386 /* LoginViewController.m */,
+				39AA4D5723011455008D8386 /* LoginViewController.xib */,
+			);
+			path = "Login（登录）";
+			sourceTree = "<group>";
+		};
+		39AA4D732301495E008D8386 /* Choose(选择部门) */ = {
+			isa = PBXGroup;
+			children = (
+				39AA4D742301495E008D8386 /* ChooseConmpanyWindowController.h */,
+				39AA4D752301495E008D8386 /* ChooseConmpanyWindowController.m */,
+				39AA4D762301495E008D8386 /* ChooseConmpanyWindowController.xib */,
+				39AA4D772301495E008D8386 /* JumpCompanyModel.h */,
+				39AA4D782301495E008D8386 /* JumpCompanyModel.m */,
+			);
+			path = "Choose(选择部门)";
+			sourceTree = "<group>";
+		};
+		39AA4D7C23014EAF008D8386 /* NewAccount(注册用户) */ = {
+			isa = PBXGroup;
+			children = (
+				39AA4D7D23014EAF008D8386 /* NewAccountWindowController.h */,
+				39AA4D7E23014EAF008D8386 /* NewAccountWindowController.m */,
+				39AA4D7F23014EAF008D8386 /* NewAccountWindowController.xib */,
+			);
+			path = "NewAccount(注册用户)";
 			sourceTree = "<group>";
 		};
 		4808CA6BAC32625FBB7855E2 /* Frameworks */ = {
@@ -164,6 +339,11 @@
 				TargetAttributes = {
 					39417A8F22FAB8F600979FD3 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -190,10 +370,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39417AB422FABC0700979FD3 /* FirstPageViewController.xib in Resources */,
+				39AA4D5923011455008D8386 /* LoginViewController.xib in Resources */,
+				39AA4D6D2301464A008D8386 /* HistoryRecordViewController.xib in Resources */,
+				39AA4D3923010747008D8386 /* DeviceInfoViewController.xib in Resources */,
+				39AA4D3423010733008D8386 /* CheckupViewController.xib in Resources */,
+				39AA4D8123014EAF008D8386 /* NewAccountWindowController.xib in Resources */,
 				39417AAF22FABA8100979FD3 /* FirstPageWindowController.xib in Resources */,
 				39417A9A22FAB8F800979FD3 /* Assets.xcassets in Resources */,
+				39AA4D68230145F0008D8386 /* CustomMessageCellView.xib in Resources */,
 				39417A9D22FAB8F800979FD3 /* MainMenu.xib in Resources */,
+				39AA4D7223014913008D8386 /* JumpRegistereViewController.xib in Resources */,
+				39AA4D7A2301495F008D8386 /* ChooseConmpanyWindowController.xib in Resources */,
+				39AA4D2F2301071E008D8386 /* AgreeInternetViewController.xib in Resources */,
+				39AA4D6223013A2C008D8386 /* FirstPageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,10 +419,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				39417A9822FAB8F600979FD3 /* ClientMac.xcdatamodeld in Sources */,
+				39AA4D67230145F0008D8386 /* CustomMessageCellView.m in Sources */,
+				39AA4D8023014EAF008D8386 /* NewAccountWindowController.m in Sources */,
+				39AA4D4E23010941008D8386 /* DateCalculater.m in Sources */,
 				39417AA022FAB8F800979FD3 /* main.m in Sources */,
+				39AA4D3823010747008D8386 /* DeviceInfoViewController.m in Sources */,
+				39AA4D7B2301495F008D8386 /* JumpCompanyModel.m in Sources */,
 				39417A9522FAB8F600979FD3 /* AppDelegate.m in Sources */,
+				39AA4D7123014913008D8386 /* JumpRegistereViewController.m in Sources */,
+				39AA4D5023010941008D8386 /* JumpKeyChain.m in Sources */,
+				39104210230168FD0032212F /* AFNHelper.m in Sources */,
 				39417AAE22FABA8100979FD3 /* FirstPageWindowController.m in Sources */,
-				39417AB322FABC0700979FD3 /* FirstPageViewController.m in Sources */,
+				39AA4D5823011455008D8386 /* LoginViewController.m in Sources */,
+				39AA4D5123010941008D8386 /* SecurityNSString.m in Sources */,
+				39AA4D3323010733008D8386 /* CheckupViewController.m in Sources */,
+				39AA4D5223010941008D8386 /* JumpPublicAction.m in Sources */,
+				39AA4D4F23010941008D8386 /* CalenarManager.m in Sources */,
+				39AA4D2E2301071D008D8386 /* AgreeInternetViewController.m in Sources */,
+				39AA4D792301495F008D8386 /* ChooseConmpanyWindowController.m in Sources */,
+				39AA4D6C2301464A008D8386 /* HistoryRecordViewController.m in Sources */,
+				39AA4D6323013A2C008D8386 /* FirstPageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,13 +575,14 @@
 				CODE_SIGN_ENTITLEMENTS = ClientMac/ClientMac.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ClientMac/PrefixPch.pch";
 				INFOPLIST_FILE = ClientMac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = jump.ClientMac;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.ClientMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -389,13 +595,14 @@
 				CODE_SIGN_ENTITLEMENTS = ClientMac/ClientMac.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ClientMac/PrefixPch.pch";
 				INFOPLIST_FILE = ClientMac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = jump.ClientMac;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.ClientMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
