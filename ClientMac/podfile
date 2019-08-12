@@ -1,0 +1,6 @@
+target 'ClientMac' do
+
+pod 'MJExtension'
+
+end
+
