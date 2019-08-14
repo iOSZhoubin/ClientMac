@@ -9,12 +9,15 @@
 #import <Cocoa/Cocoa.h>
 #import <CoreData/CoreData.h>
 #import "FirstPageWindowController.h"
+#import "FirstShowWindowController.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 
-@property (strong,nonatomic) NSWindowController *mainWC;
+@property (strong,nonatomic) FirstPageWindowController *mainWC;
+
+@property (strong,nonatomic) FirstShowWindowController *mainWC1;
 
 @property (strong,nonatomic) NSWindowController *windowVc;
 

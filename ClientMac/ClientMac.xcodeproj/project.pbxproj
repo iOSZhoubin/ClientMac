@@ -15,6 +15,9 @@
 		39417AA022FAB8F800979FD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39417A9F22FAB8F800979FD3 /* main.m */; };
 		39417AAE22FABA8100979FD3 /* FirstPageWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39417AAC22FABA8100979FD3 /* FirstPageWindowController.m */; };
 		39417AAF22FABA8100979FD3 /* FirstPageWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39417AAD22FABA8100979FD3 /* FirstPageWindowController.xib */; };
+		397849BF2303DE4700F76C65 /* FirstShowWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 397849BD2303DE4700F76C65 /* FirstShowWindowController.m */; };
+		397849C02303DE4800F76C65 /* FirstShowWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 397849BE2303DE4700F76C65 /* FirstShowWindowController.xib */; };
+		3986DA372303ADF5000F5924 /* ApplicitionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3986DA362303ADF5000F5924 /* ApplicitionModel.m */; };
 		39AA4D2E2301071D008D8386 /* AgreeInternetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D2C2301071D008D8386 /* AgreeInternetViewController.m */; };
 		39AA4D2F2301071E008D8386 /* AgreeInternetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39AA4D2D2301071D008D8386 /* AgreeInternetViewController.xib */; };
 		39AA4D3323010733008D8386 /* CheckupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D3123010733008D8386 /* CheckupViewController.m */; };
@@ -23,7 +26,6 @@
 		39AA4D3923010747008D8386 /* DeviceInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39AA4D3723010747008D8386 /* DeviceInfoViewController.xib */; };
 		39AA4D4E23010941008D8386 /* DateCalculater.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D4223010941008D8386 /* DateCalculater.m */; };
 		39AA4D4F23010941008D8386 /* CalenarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D4523010941008D8386 /* CalenarManager.m */; };
-		39AA4D5023010941008D8386 /* JumpKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D4823010941008D8386 /* JumpKeyChain.m */; };
 		39AA4D5123010941008D8386 /* SecurityNSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D4923010941008D8386 /* SecurityNSString.m */; };
 		39AA4D5223010941008D8386 /* JumpPublicAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D4C23010941008D8386 /* JumpPublicAction.m */; };
 		39AA4D5823011455008D8386 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D5623011455008D8386 /* LoginViewController.m */; };
@@ -61,6 +63,11 @@
 		39417AAB22FABA8100979FD3 /* FirstPageWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstPageWindowController.h; sourceTree = "<group>"; };
 		39417AAC22FABA8100979FD3 /* FirstPageWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstPageWindowController.m; sourceTree = "<group>"; };
 		39417AAD22FABA8100979FD3 /* FirstPageWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstPageWindowController.xib; sourceTree = "<group>"; };
+		397849BC2303DE4700F76C65 /* FirstShowWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstShowWindowController.h; sourceTree = "<group>"; };
+		397849BD2303DE4700F76C65 /* FirstShowWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstShowWindowController.m; sourceTree = "<group>"; };
+		397849BE2303DE4700F76C65 /* FirstShowWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstShowWindowController.xib; sourceTree = "<group>"; };
+		3986DA352303ADF5000F5924 /* ApplicitionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicitionModel.h; sourceTree = "<group>"; };
+		3986DA362303ADF5000F5924 /* ApplicitionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicitionModel.m; sourceTree = "<group>"; };
 		39AA4D2B2301071D008D8386 /* AgreeInternetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AgreeInternetViewController.h; sourceTree = "<group>"; };
 		39AA4D2C2301071D008D8386 /* AgreeInternetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AgreeInternetViewController.m; sourceTree = "<group>"; };
 		39AA4D2D2301071D008D8386 /* AgreeInternetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgreeInternetViewController.xib; sourceTree = "<group>"; };
@@ -76,9 +83,7 @@
 		39AA4D4323010941008D8386 /* DateCalculater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateCalculater.h; sourceTree = "<group>"; };
 		39AA4D4423010941008D8386 /* CalenarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalenarManager.h; sourceTree = "<group>"; };
 		39AA4D4523010941008D8386 /* CalenarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalenarManager.m; sourceTree = "<group>"; };
-		39AA4D4623010941008D8386 /* JumpKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JumpKeyChain.h; sourceTree = "<group>"; };
 		39AA4D4723010941008D8386 /* JumpPublicAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JumpPublicAction.h; sourceTree = "<group>"; };
-		39AA4D4823010941008D8386 /* JumpKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JumpKeyChain.m; sourceTree = "<group>"; };
 		39AA4D4923010941008D8386 /* SecurityNSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityNSString.m; sourceTree = "<group>"; };
 		39AA4D4B23010941008D8386 /* SecurityNSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityNSString.h; sourceTree = "<group>"; };
 		39AA4D4C23010941008D8386 /* JumpPublicAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JumpPublicAction.m; sourceTree = "<group>"; };
@@ -176,6 +181,9 @@
 		39417AA822FAB9DC00979FD3 /* firstPage（首页） */ = {
 			isa = PBXGroup;
 			children = (
+				397849BC2303DE4700F76C65 /* FirstShowWindowController.h */,
+				397849BD2303DE4700F76C65 /* FirstShowWindowController.m */,
+				397849BE2303DE4700F76C65 /* FirstShowWindowController.xib */,
 				39417AAB22FABA8100979FD3 /* FirstPageWindowController.h */,
 				39417AAC22FABA8100979FD3 /* FirstPageWindowController.m */,
 				39417AAD22FABA8100979FD3 /* FirstPageWindowController.xib */,
@@ -202,6 +210,8 @@
 				39AA4D3023010733008D8386 /* CheckupViewController.h */,
 				39AA4D3123010733008D8386 /* CheckupViewController.m */,
 				39AA4D3223010733008D8386 /* CheckupViewController.xib */,
+				3986DA352303ADF5000F5924 /* ApplicitionModel.h */,
+				3986DA362303ADF5000F5924 /* ApplicitionModel.m */,
 			);
 			path = "Checkup（安检）";
 			sourceTree = "<group>";
@@ -248,8 +258,6 @@
 				39AA4D4523010941008D8386 /* CalenarManager.m */,
 				39AA4D4323010941008D8386 /* DateCalculater.h */,
 				39AA4D4223010941008D8386 /* DateCalculater.m */,
-				39AA4D4623010941008D8386 /* JumpKeyChain.h */,
-				39AA4D4823010941008D8386 /* JumpKeyChain.m */,
 				39AA4D4723010941008D8386 /* JumpPublicAction.h */,
 				39AA4D4C23010941008D8386 /* JumpPublicAction.m */,
 				39AA4D4B23010941008D8386 /* SecurityNSString.h */,
@@ -371,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39AA4D5923011455008D8386 /* LoginViewController.xib in Resources */,
+				397849C02303DE4800F76C65 /* FirstShowWindowController.xib in Resources */,
 				39AA4D6D2301464A008D8386 /* HistoryRecordViewController.xib in Resources */,
 				39AA4D3923010747008D8386 /* DeviceInfoViewController.xib in Resources */,
 				39AA4D3423010733008D8386 /* CheckupViewController.xib in Resources */,
@@ -427,10 +436,11 @@
 				39AA4D7B2301495F008D8386 /* JumpCompanyModel.m in Sources */,
 				39417A9522FAB8F600979FD3 /* AppDelegate.m in Sources */,
 				39AA4D7123014913008D8386 /* JumpRegistereViewController.m in Sources */,
-				39AA4D5023010941008D8386 /* JumpKeyChain.m in Sources */,
 				39104210230168FD0032212F /* AFNHelper.m in Sources */,
 				39417AAE22FABA8100979FD3 /* FirstPageWindowController.m in Sources */,
+				3986DA372303ADF5000F5924 /* ApplicitionModel.m in Sources */,
 				39AA4D5823011455008D8386 /* LoginViewController.m in Sources */,
+				397849BF2303DE4700F76C65 /* FirstShowWindowController.m in Sources */,
 				39AA4D5123010941008D8386 /* SecurityNSString.m in Sources */,
 				39AA4D3323010733008D8386 /* CheckupViewController.m in Sources */,
 				39AA4D5223010941008D8386 /* JumpPublicAction.m in Sources */,

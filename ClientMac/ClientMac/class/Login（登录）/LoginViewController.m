@@ -86,10 +86,22 @@
         self.ipcontent.stringValue = SafeString(defaultDict[@"ipAddress"]);
     }
     
-    //获取钥匙串中保存的设备唯一识别码
-    self.deviceCode = [JumpKeyChain getUUIDInKeychain];
+    //获取设备唯一识别码
     
-    JumpLog(@"设备id是(钥匙串中)---%@",self.deviceCode);
+    NSDictionary *dict = [[NSUserDefaults standardUserDefaults] objectForKey:@"mac_userMessage"];
+
+    NSString *sid = SafeString(dict[@"deviceId"]);
+    
+    if(sid.length > 0){
+        
+        self.deviceCode = sid;
+
+    }else{
+       
+        self.deviceCode = [self getUUID];
+    }
+    
+    JumpLog(@"设备id是---%@",self.deviceCode);
     
 }
 
@@ -153,8 +165,6 @@
 -(void)clicklogin{
     
     L2CWeakSelf(self);
-    
-    self.deviceCode = [JumpKeyChain getUUIDInKeychain];
     
     NSString *loginType = @"";
     
@@ -226,13 +236,15 @@
  */
 -(void)pushSuccessVcWithUserId:(NSString *)userId isCheck:(NSString *)isCheck isregiter:(NSString *)isregiter binduser:(NSString *)binduser{
     
+    
     if([binduser isEqualToString:self.accountcontent.stringValue] || binduser.length < 1){
         
         if([isregiter isEqualToString:@"0"]){
             //没注册过
             
             //跳转到注册界面
-            
+            [KNotification postNotificationName:@"FirstPageViewController" object:nil userInfo:@{@"title":@"注册",@"isCheck":isCheck}];
+
         }else{
             //注册过
             
@@ -240,12 +252,15 @@
                 //需要安检
             
                 //跳转到安检界面
-                
+                [KNotification postNotificationName:@"FirstPageViewController" object:nil userInfo:@{@"title":@"安检"}];
+
                 
             }else{
                 //不需要安检
                 
                 //跳转到入网界面
+                [KNotification postNotificationName:@"FirstPageViewController" object:nil userInfo:@{@"title":@"入网"}];
+
             }
             
             if([self.isSyn isEqualToString:@"1"] && [self.passwordTitle.stringValue isEqualToString:@"验证码"]){
@@ -704,5 +719,21 @@
     
     [[self.accountWC window] center];//显示在屏幕中间
 }
+
+
+
+#pragma mark --- 获取UUID的方法
+
+-(NSString *)getUUID {
+   
+    CFUUIDRef puuid = CFUUIDCreate( nil );
+    
+    CFStringRef uuidString = CFUUIDCreateString(nil, puuid);
+    
+    NSString *result = (NSString *)CFBridgingRelease(CFStringCreateCopy( NULL, uuidString));
+    
+    return result;
+}
+
 
 @end

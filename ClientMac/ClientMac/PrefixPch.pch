@@ -10,7 +10,6 @@
 #import "SecurityNSString.h"
 #import "AFNHelper.h"
 #import "InterfaceHeader.h"
-#import "JumpKeyChain.h"
 #import "AppDelegate.h"
 #import "JumpPublicAction.h"
 

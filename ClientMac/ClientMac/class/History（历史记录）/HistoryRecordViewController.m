@@ -81,7 +81,7 @@
         
         NSTableCellView *oneCell = [tableView makeViewWithIdentifier:@"oneCell" owner:self];
         
-        oneCell.textField.stringValue = self.dataArray[row][@"time"];
+        oneCell.textField.stringValue = SafeString(self.dataArray[row][@"time"]);
         
         return oneCell;
         
@@ -89,15 +89,31 @@
         
         NSTableCellView *twoCell = [tableView makeViewWithIdentifier:@"twoCell" owner:self];
         
-        twoCell.textField.stringValue = self.dataArray[row][@"status"];
+        twoCell.textField.stringValue = SafeString(self.dataArray[row][@"status"]);
         
         return twoCell;
     
+    }else if([tableColumn.identifier isEqualToString:@"threeColumn"]){
+        
+        NSTableCellView *twoCell = [tableView makeViewWithIdentifier:@"threeCell" owner:self];
+        
+        twoCell.textField.stringValue = SafeString(self.dataArray[row][@"sumPass"]);
+        
+        return twoCell;
+        
+    }else if([tableColumn.identifier isEqualToString:@"fourColumn"]){
+        
+        NSTableCellView *twoCell = [tableView makeViewWithIdentifier:@"fourCell" owner:self];
+        
+        twoCell.textField.stringValue = SafeString(self.dataArray[row][@"noPass"]);
+        
+        return twoCell;
+        
     }else{
         
         CustomMessageCellView *cellView = [tableView makeViewWithIdentifier:@"CustomMessageCellView" owner:self];
         
-        NSString *content = self.dataArray[row][@"desc"];
+        NSString *content = SafeString(self.dataArray[row][@"desc"]);
         
         [cellView refreshWithContent:content];
         

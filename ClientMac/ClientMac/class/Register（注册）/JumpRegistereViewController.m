@@ -50,6 +50,8 @@
 @property (weak) IBOutlet NSTextField *deparmentL;
 //备注title
 @property (weak) IBOutlet NSTextField *remarkL;
+//是否需要安检 0-否 1-是
+@property (copy,nonatomic) NSString *ischeck;
 
 @end
 
@@ -75,7 +77,22 @@
     self.choosePeople.delegate = self;
     
     [self getTitleNameArray];//获取注册列表
+    
+    [KNotification addObserver:self selector:@selector(notifi:) name:@"FirstPageViewController" object:nil];
+
 }
+
+- (void)notifi:(NSNotification *)note{
+    
+    NSString *title = SafeString(note.userInfo[@"title"]);
+    
+    if([title isEqualToString:@"注册"]){
+        
+        self.ischeck = SafeString(note.userInfo[@"isCheck"]);
+
+    }
+}
+
 
 
 #pragma mark --- 保存
@@ -291,21 +308,27 @@
     [AFNHelper macPost:Mac_Register parameters:paramters success:^(id responseObject) {
         
         if([responseObject[@"message"] isEqualToString:@"ok"]){
-            
-            
-            [weakself show:@"提示" andMessage:@"保存成功"];
-            
+
             [weakself userInfoDetail];
+            
+            if([weakself.isCheck isEqualToString:@"0"]){
+                //不需要安检、跳转到入网成功的界面
+                [KNotification postNotificationName:@"FirstPageViewController" object:nil userInfo:@{@"title":@"入网"}];
+
+            }else{
+                //需要安检、跳转到安检界面
+                [KNotification postNotificationName:@"FirstPageViewController" object:nil userInfo:@{@"title":@"安检"}];
+            }
             
         }else{
             
-            [weakself show:@"提示" andMessage:@"保存失败"];
+            [weakself show:@"提示" andMessage:@"注册失败"];
             
         }
         
     } andFailed:^(id error) {
         
-        [weakself show:@"提示" andMessage:@"保存失败"];
+        [weakself show:@"提示" andMessage:@"请求服务器失败"];
 
     }];
 }

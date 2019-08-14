@@ -84,7 +84,8 @@
                                     <constraints>
                                         <constraint firstAttribute="width" constant="150" id="tfG-m4-av0"/>
                                     </constraints>
-                                    <color key="borderColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="borderColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="fillColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 </box>
                                 <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="kyy-ua-35m">
                                     <rect key="frame" x="468" y="0.0" width="150" height="98"/>
@@ -139,7 +140,8 @@
                                     <constraints>
                                         <constraint firstAttribute="width" constant="150" id="UUL-Cy-UEx"/>
                                     </constraints>
-                                    <color key="borderColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="borderColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="fillColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </box>
                                 <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="CEA-O9-ana">
                                     <rect key="frame" x="628" y="0.0" width="150" height="98"/>
@@ -194,7 +196,8 @@
                                     <constraints>
                                         <constraint firstAttribute="width" constant="150" id="sgx-7k-B0o"/>
                                     </constraints>
-                                    <color key="borderColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="borderColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="fillColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </box>
                             </subviews>
                             <constraints>
@@ -213,10 +216,10 @@
                             <constraint firstAttribute="height" constant="100" id="aHH-JI-1Q5"/>
                         </constraints>
                         <color key="borderColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="fillColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="fillColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </box>
                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SQA-A8-LJC">
-                        <rect key="frame" x="612" y="575" width="20" height="20"/>
+                        <rect key="frame" x="612" y="572" width="20" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="LMd-1w-aYV"/>
                             <constraint firstAttribute="width" constant="20" id="Xpc-bc-Mhp"/>
@@ -224,7 +227,7 @@
                         <imageCell key="cell" enabled="NO" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="logo_2" id="FeQ-1n-2w9"/>
                     </imageView>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="n29-gn-bdD">
-                        <rect key="frame" x="638" y="577" width="144" height="17"/>
+                        <rect key="frame" x="638" y="574" width="144" height="17"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="140" id="URg-Kf-RNM"/>
                             <constraint firstAttribute="height" constant="17" id="Z9Z-1X-oXm"/>
@@ -244,8 +247,8 @@
                     <constraint firstAttribute="trailing" secondItem="XEa-1c-0vm" secondAttribute="trailing" id="5Lx-VV-ioI"/>
                     <constraint firstItem="UjR-g9-hIU" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="25" id="Mjq-cd-8k3"/>
                     <constraint firstAttribute="trailing" secondItem="n29-gn-bdD" secondAttribute="trailing" constant="20" id="NZ2-2j-fS2"/>
-                    <constraint firstItem="SQA-A8-LJC" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="5" id="Pk6-eU-sdL"/>
-                    <constraint firstItem="n29-gn-bdD" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="6" id="Sz1-d4-cHc"/>
+                    <constraint firstItem="SQA-A8-LJC" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="8" id="Pk6-eU-sdL"/>
+                    <constraint firstItem="n29-gn-bdD" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="9" id="Sz1-d4-cHc"/>
                     <constraint firstItem="UjR-g9-hIU" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="ZI5-wC-TBx"/>
                     <constraint firstAttribute="bottom" secondItem="UjR-g9-hIU" secondAttribute="bottom" constant="50" id="ciM-Tj-fzt"/>
                     <constraint firstItem="XEa-1c-0vm" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="eDZ-Y0-rom"/>

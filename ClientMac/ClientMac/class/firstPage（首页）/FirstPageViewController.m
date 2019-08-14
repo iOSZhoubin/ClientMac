@@ -29,6 +29,9 @@
 //tabView
 @property (weak) IBOutlet NSTabView *tabView;
 
+//通知传过来的
+@property (copy,nonatomic) NSString *titleStr;
+
 @end
 
 @implementation FirstPageViewController
@@ -50,25 +53,101 @@
     self.registerItem.view = self.registerVc.view;
     self.checkupItem.view = self.checkupVc.view;
     self.agreeInItem.view = self.agreeInternetVc.view;
+    
+    [KNotification addObserver:self selector:@selector(notifi:) name:@"FirstPageViewController" object:nil];
+}
 
+- (void)notifi:(NSNotification *)note{
+    
+    self.titleStr = SafeString(note.userInfo[@"title"]);
+    
+    if([self.titleStr isEqualToString:@"登录"]){
+        
+        [self.tabView selectTabViewItem:self.loginItem];
+        
+    }else if ([self.titleStr isEqualToString:@"注册"]){
+        
+        [self.tabView selectTabViewItem:self.registerItem];
+
+    }else if ([self.titleStr isEqualToString:@"安检"]){
+        
+        [self.tabView selectTabViewItem:self.checkupItem];
+
+    }else if ([self.titleStr isEqualToString:@"入网"]){
+
+        [self.tabView selectTabViewItem:self.agreeInItem];
+
+    }
+    
 }
 
 - (BOOL)tabView:(NSTabView *)tabView shouldSelectTabViewItem:(nullable NSTabViewItem *)tabViewItem{
 
-//    NSString *str = tabViewItem.label;
-//
-//    if([str isEqualToString:@"登录"]){
-//
-//        return NO;
-//    }
-    
-    return YES;
+    NSString *str = tabViewItem.label;
+
+    if([self.titleStr isEqualToString:@"登录"]){
+        
+        if([str isEqualToString:@"登录"]){
+            
+            return YES;
+            
+        }else{
+            
+            return NO;
+        }
+        
+    }else if ([self.titleStr isEqualToString:@"注册"]){
+        
+        if([str isEqualToString:@"注册"]){
+            
+            return YES;
+            
+        }else{
+            
+            return NO;
+        }
+        
+    }else if ([self.titleStr isEqualToString:@"安检"]){
+        
+        if([str isEqualToString:@"安检"]){
+            
+            return YES;
+            
+        }else{
+            
+            return NO;
+        }
+        
+    }else if ([self.titleStr isEqualToString:@"入网"]){
+        
+        if([str isEqualToString:@"入网"]){
+            
+            return YES;
+            
+        }else{
+            
+            return NO;
+        }
+        
+    }else{
+        
+        if([str isEqualToString:@"登录"]){
+            
+            return YES;
+            
+        }else{
+            
+            return NO;
+        }
+    }
 }
 
 
 - (void)tabView:(NSTabView *)tabView willSelectTabViewItem:(nullable NSTabViewItem *)tabViewItem{
     
     JumpLog(@"将要点击某个item");
+    
+//    [self tabView:tabView shouldSelectTabViewItem:tabViewItem];
     
 //    [self.tabView selectTabViewItem:self.registerItem]; //指定显示在某一个item上
 }
