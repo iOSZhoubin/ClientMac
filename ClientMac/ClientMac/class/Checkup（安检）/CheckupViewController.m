@@ -86,7 +86,7 @@
     
     self.itemContent.stringValue = @"";
     
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.02f repeats:YES block:^(NSTimer * _Nonnull timer) {
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.2f repeats:YES block:^(NSTimer * _Nonnull timer) {
         
         weakself.progressV = weakself.progress.doubleValue;
         
@@ -414,7 +414,7 @@
         status = @"不通过";
     }
     
-    NSInteger sumNum = self.processY.count + self.processN.count;
+    NSInteger sumNum = self.processY.count + self.processN.count + 2;
     
     NSString *sumCount = [NSString stringWithFormat:@"%ld",sumNum];
     NSString *noCount = [NSString stringWithFormat:@"%ld",self.muArray.count];
@@ -509,7 +509,6 @@
     
     [alert beginSheetModalForWindow:self.view.window completionHandler:^(NSModalResponse returnCode) {
         
-        [self dismissViewController:self];
         
     }];
     

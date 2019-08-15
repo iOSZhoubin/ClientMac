@@ -9,6 +9,9 @@
         <customObject id="-2" userLabel="File's Owner" customClass="FirstPageWindowController">
             <connections>
                 <outlet property="customerView" destination="UjR-g9-hIU" id="RKn-d8-gbX"/>
+                <outlet property="deviceBtn" destination="R97-qC-i6v" id="4F7-QP-ke8"/>
+                <outlet property="historyBtn" destination="eZX-2T-2xq" id="i7u-Zy-o3a"/>
+                <outlet property="internetBtn" destination="YTn-Uq-ykU" id="RUt-0m-yuK"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -37,18 +40,18 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <button translatesAutoresizingMaskIntoConstraints="NO" id="YTn-Uq-ykU">
-                                                <rect key="frame" x="10" y="33" width="30" height="30"/>
+                                                <rect key="frame" x="10" y="31" width="40" height="34"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="30" id="2fk-Lz-en4"/>
-                                                    <constraint firstAttribute="height" constant="30" id="fJF-hg-mST"/>
+                                                    <constraint firstAttribute="width" constant="40" id="2fk-Lz-en4"/>
+                                                    <constraint firstAttribute="height" constant="34" id="fJF-hg-mST"/>
                                                 </constraints>
-                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="G4P-hW-DmJ">
+                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="selectNet" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="G4P-hW-DmJ">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
                                             </button>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SjB-Ge-VBG">
-                                                <rect key="frame" x="53" y="39" width="87" height="17"/>
+                                                <rect key="frame" x="63" y="39" width="77" height="17"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="17" id="TVv-uR-nlp"/>
                                                 </constraints>
@@ -84,8 +87,8 @@
                                     <constraints>
                                         <constraint firstAttribute="width" constant="150" id="tfG-m4-av0"/>
                                     </constraints>
-                                    <color key="borderColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="fillColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="borderColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="fillColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 </box>
                                 <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="kyy-ua-35m">
                                     <rect key="frame" x="468" y="0.0" width="150" height="98"/>
@@ -94,12 +97,12 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <button translatesAutoresizingMaskIntoConstraints="NO" id="eZX-2T-2xq">
-                                                <rect key="frame" x="29" y="33" width="30" height="30"/>
+                                                <rect key="frame" x="19" y="31" width="40" height="34"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="30" id="JMA-LN-G09"/>
-                                                    <constraint firstAttribute="height" constant="30" id="fY2-oh-b9w"/>
+                                                    <constraint firstAttribute="width" constant="40" id="JMA-LN-G09"/>
+                                                    <constraint firstAttribute="height" constant="34" id="fY2-oh-b9w"/>
                                                 </constraints>
-                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="wJu-tx-Cgz">
+                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="defaultHistory" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="wJu-tx-Cgz">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
@@ -140,8 +143,8 @@
                                     <constraints>
                                         <constraint firstAttribute="width" constant="150" id="UUL-Cy-UEx"/>
                                     </constraints>
-                                    <color key="borderColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="fillColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="borderColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="fillColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </box>
                                 <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="CEA-O9-ana">
                                     <rect key="frame" x="628" y="0.0" width="150" height="98"/>
@@ -150,12 +153,12 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <button translatesAutoresizingMaskIntoConstraints="NO" id="R97-qC-i6v">
-                                                <rect key="frame" x="29" y="33" width="30" height="30"/>
+                                                <rect key="frame" x="19" y="31" width="40" height="34"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="BSr-Vc-cKx"/>
-                                                    <constraint firstAttribute="width" constant="30" id="hno-OV-mVu"/>
+                                                    <constraint firstAttribute="height" constant="34" id="BSr-Vc-cKx"/>
+                                                    <constraint firstAttribute="width" constant="40" id="hno-OV-mVu"/>
                                                 </constraints>
-                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="tg2-K6-7Zd">
+                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="defaultDevice" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="tg2-K6-7Zd">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
@@ -196,8 +199,8 @@
                                     <constraints>
                                         <constraint firstAttribute="width" constant="150" id="sgx-7k-B0o"/>
                                     </constraints>
-                                    <color key="borderColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="fillColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="borderColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="fillColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </box>
                             </subviews>
                             <constraints>
@@ -216,7 +219,7 @@
                             <constraint firstAttribute="height" constant="100" id="aHH-JI-1Q5"/>
                         </constraints>
                         <color key="borderColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="fillColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="fillColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </box>
                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SQA-A8-LJC">
                         <rect key="frame" x="612" y="572" width="20" height="20"/>
@@ -263,6 +266,9 @@
         </window>
     </objects>
     <resources>
+        <image name="defaultDevice" width="40" height="34"/>
+        <image name="defaultHistory" width="38" height="40"/>
         <image name="logo_2" width="40" height="40"/>
+        <image name="selectNet" width="35" height="40"/>
     </resources>
 </document>

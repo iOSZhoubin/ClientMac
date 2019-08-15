@@ -190,4 +190,12 @@
     }];
 }
 
+#pragma mark --- 重新入网
+
+- (IBAction)againAction:(NSButton *)sender {
+    
+    [KNotification postNotificationName:@"FirstPageViewController" object:nil userInfo:@{@"title":@"登录"}];
+
+}
+
 @end

@@ -13,9 +13,18 @@
 
 @interface FirstPageWindowController ()
 
+//准入
 @property (strong,nonatomic) FirstPageViewController *loginVc;
+//历史记录
 @property (strong,nonatomic) HistoryRecordViewController *historyVc;
+//设备信息
 @property (strong,nonatomic) DeviceInfoViewController *deviceVc;
+//准入按钮
+@property (weak) IBOutlet NSButton *internetBtn;
+//历史记录按钮
+@property (weak) IBOutlet NSButton *historyBtn;
+//设备按钮
+@property (weak) IBOutlet NSButton *deviceBtn;
 
 @property (weak) IBOutlet NSView *customerView;
 
@@ -54,6 +63,10 @@
     [self.loginVc.view removeFromSuperview];
     [self.historyVc.view removeFromSuperview];
     [self.deviceVc.view removeFromSuperview];
+    
+    [self.internetBtn setImage:[NSImage imageNamed:@"selectNet"]];
+    [self.historyBtn setImage:[NSImage imageNamed:@"defaultHistory"]];
+    [self.deviceBtn setImage:[NSImage imageNamed:@"defaultDevice"]];
 
     [self.customerView addSubview:self.loginVc.view];
 
@@ -69,6 +82,10 @@
     [self.historyVc.view removeFromSuperview];
     [self.deviceVc.view removeFromSuperview];
     
+    [self.internetBtn setImage:[NSImage imageNamed:@"defaultNet"]];
+    [self.historyBtn setImage:[NSImage imageNamed:@"historySelect"]];
+    [self.deviceBtn setImage:[NSImage imageNamed:@"defaultDevice"]];
+    
     [self.customerView addSubview:self.historyVc.view];
 }
 
@@ -81,6 +98,10 @@
     [self.loginVc.view removeFromSuperview];
     [self.historyVc.view removeFromSuperview];
     [self.deviceVc.view removeFromSuperview];
+    
+    [self.internetBtn setImage:[NSImage imageNamed:@"defaultNet"]];
+    [self.historyBtn setImage:[NSImage imageNamed:@"defaultHistory"]];
+    [self.deviceBtn setImage:[NSImage imageNamed:@"deviceMessage"]];
     
     [self.customerView addSubview:self.deviceVc.view];
 }

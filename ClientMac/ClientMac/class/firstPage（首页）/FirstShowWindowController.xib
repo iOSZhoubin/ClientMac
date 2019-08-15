@@ -17,7 +17,7 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="F0z-JX-Cv5">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" fullSizeContentView="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="240" width="800" height="600"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
@@ -28,10 +28,10 @@
                 <subviews>
                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="enP-gX-wNo">
                         <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
-                        <imageCell key="cell" enabled="NO" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="d02-5b-qNM"/>
+                        <imageCell key="cell" enabled="NO" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="bgView" id="d02-5b-qNM"/>
                     </imageView>
                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AQl-ih-Voj">
-                        <rect key="frame" x="610" y="576" width="20" height="20"/>
+                        <rect key="frame" x="610" y="577" width="20" height="20"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="20" id="R1X-lY-ytX"/>
                             <constraint firstAttribute="height" constant="20" id="hQX-ym-0n7"/>
@@ -46,7 +46,7 @@
                         </constraints>
                         <textFieldCell key="cell" lineBreakMode="clipping" enabled="NO" title="捷普准入控制系统V6.0" id="0lu-eJ-6u5">
                             <font key="font" metaFont="system"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
@@ -58,7 +58,7 @@
                         </constraints>
                         <textFieldCell key="cell" lineBreakMode="clipping" enabled="NO" title="主机名：" id="cLs-vq-BUd">
                             <font key="font" metaFont="system"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
@@ -69,7 +69,7 @@
                         </constraints>
                         <textFieldCell key="cell" lineBreakMode="clipping" enabled="NO" title="IP：" id="7jh-K4-rfv">
                             <font key="font" metaFont="system"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
@@ -80,7 +80,7 @@
                         </constraints>
                         <textFieldCell key="cell" lineBreakMode="clipping" enabled="NO" title="MAC：" id="GYv-rD-MRj">
                             <font key="font" metaFont="system"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
@@ -91,7 +91,7 @@
                         </constraints>
                         <textFieldCell key="cell" lineBreakMode="clipping" enabled="NO" title="123" id="yy5-u2-bcb">
                             <font key="font" metaFont="system"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
@@ -102,7 +102,7 @@
                         </constraints>
                         <textFieldCell key="cell" lineBreakMode="clipping" enabled="NO" title="10.0.11.33" id="HSd-1G-sAg">
                             <font key="font" metaFont="system"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
@@ -113,7 +113,7 @@
                         </constraints>
                         <textFieldCell key="cell" lineBreakMode="clipping" enabled="NO" title="websoc" id="yle-Gw-LJ4">
                             <font key="font" metaFont="system"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
@@ -123,13 +123,13 @@
                             <constraint firstAttribute="width" constant="75" id="P5D-j0-ccS"/>
                             <constraint firstAttribute="height" constant="75" id="vpa-eH-KWk"/>
                         </constraints>
-                        <imageCell key="cell" enabled="NO" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="ml8-98-DMN"/>
+                        <imageCell key="cell" enabled="NO" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="userIcon" id="ml8-98-DMN"/>
                     </imageView>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mau-u9-0BJ">
                         <rect key="frame" x="528" y="393" width="176" height="18"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" enabled="NO" title="登录捷普准入体验安全上网" id="McT-Ha-CKQ">
                             <font key="font" metaFont="system" size="14"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
@@ -141,17 +141,17 @@
                         </constraints>
                         <textFieldCell key="cell" lineBreakMode="clipping" enabled="NO" title="未登录" id="Sgn-sT-ei7">
                             <font key="font" metaFont="system" size="20"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="AUJ-UR-wgS">
-                        <rect key="frame" x="425" y="285" width="170" height="40"/>
+                        <rect key="frame" x="430" y="295" width="170" height="40"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="170" id="bxr-s3-HgK"/>
                             <constraint firstAttribute="height" constant="40" id="yA5-uT-Jmr"/>
                         </constraints>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="2Xg-A1-Bfi">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="loginBtn" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="2Xg-A1-Bfi">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -161,8 +161,8 @@
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="AUJ-UR-wgS" secondAttribute="trailing" constant="205" id="6px-Xx-8Ld"/>
-                    <constraint firstItem="AUJ-UR-wgS" firstAttribute="top" secondItem="7vu-B9-rFm" secondAttribute="bottom" constant="60" id="7Re-vf-wGF"/>
+                    <constraint firstAttribute="trailing" secondItem="AUJ-UR-wgS" secondAttribute="trailing" constant="200" id="6px-Xx-8Ld"/>
+                    <constraint firstItem="AUJ-UR-wgS" firstAttribute="top" secondItem="7vu-B9-rFm" secondAttribute="bottom" constant="50" id="7Re-vf-wGF"/>
                     <constraint firstAttribute="trailing" secondItem="7vu-B9-rFm" secondAttribute="trailing" constant="300" id="88I-AQ-JZi"/>
                     <constraint firstItem="tRm-XG-1mh" firstAttribute="height" secondItem="BbL-kE-8MX" secondAttribute="height" id="AUv-Vi-32n"/>
                     <constraint firstAttribute="bottom" secondItem="BbL-kE-8MX" secondAttribute="bottom" constant="20" id="Ai3-WG-nBv"/>
@@ -172,11 +172,11 @@
                     <constraint firstItem="RkI-HC-H6v" firstAttribute="height" secondItem="BbL-kE-8MX" secondAttribute="height" id="K5y-ww-RJF"/>
                     <constraint firstItem="RkI-HC-H6v" firstAttribute="leading" secondItem="kbl-bh-j4f" secondAttribute="trailing" constant="8" id="LCi-1G-36y"/>
                     <constraint firstItem="kbl-bh-j4f" firstAttribute="centerY" secondItem="BbL-kE-8MX" secondAttribute="centerY" id="NgU-tN-pB3"/>
-                    <constraint firstItem="AQl-ih-Voj" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="4" id="V9w-CF-hHz"/>
+                    <constraint firstItem="AQl-ih-Voj" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="3" id="V9w-CF-hHz"/>
                     <constraint firstAttribute="trailing" secondItem="KzA-v6-GFL" secondAttribute="trailing" constant="20" id="Wdb-0N-7bW"/>
                     <constraint firstItem="1SG-Iy-ZRx" firstAttribute="centerY" secondItem="BbL-kE-8MX" secondAttribute="centerY" id="X5L-mM-9s0"/>
                     <constraint firstItem="1SG-Iy-ZRx" firstAttribute="leading" secondItem="BbL-kE-8MX" secondAttribute="trailing" constant="8" id="YrW-Z9-Hv5"/>
-                    <constraint firstItem="AUJ-UR-wgS" firstAttribute="top" secondItem="mau-u9-0BJ" secondAttribute="bottom" constant="68" id="a7t-Hb-erW"/>
+                    <constraint firstItem="AUJ-UR-wgS" firstAttribute="top" secondItem="mau-u9-0BJ" secondAttribute="bottom" constant="58" id="a7t-Hb-erW"/>
                     <constraint firstItem="kbl-bh-j4f" firstAttribute="leading" secondItem="1SG-Iy-ZRx" secondAttribute="trailing" constant="30" id="bYk-1c-psD"/>
                     <constraint firstItem="1SG-Iy-ZRx" firstAttribute="height" secondItem="BbL-kE-8MX" secondAttribute="height" id="dD4-Kw-Bf7"/>
                     <constraint firstItem="enP-gX-wNo" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" id="dgx-N8-Xsp"/>
@@ -203,6 +203,9 @@
         </window>
     </objects>
     <resources>
+        <image name="bgView" width="800" height="600"/>
+        <image name="loginBtn" width="170" height="40"/>
         <image name="logo_2" width="40" height="40"/>
+        <image name="userIcon" width="80" height="80"/>
     </resources>
 </document>

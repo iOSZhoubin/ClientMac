@@ -31,11 +31,19 @@
     
     appdelegate.windowVc = self;
     
+    [self.window setContentSize:NSMakeSize(800, 600)];
+    
+    self.window.restorable = NO;
+    
+    [self.window setBackgroundColor:[NSColor whiteColor]];
+    
     self.firstPageWc = [[FirstPageWindowController alloc]initWithWindowNibName:@"FirstPageWindowController"];
     
     self.ipAddress.stringValue = [JumpPublicAction getDeviceIPAddress];
    
     self.macAddress.stringValue = [JumpPublicAction getDeviceMacAddress];
+    
+    self.name.stringValue = [NSString stringWithFormat:@"%@",[NSHost currentHost].localizedName];
 
 }
 

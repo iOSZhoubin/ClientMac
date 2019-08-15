@@ -66,59 +66,110 @@
 }
 
 
-+(NSString *)getDeviceMacAddress{
+//+(NSString *)getDeviceMacAddress{
+//
+//    NSString *macDeviceAddress = @"";
+//    kern_return_t kr;
+//    CFMutableDictionaryRef matchDict;
+//    io_iterator_t iterator;
+//    io_registry_entry_t entry;
+//
+//    matchDict = IOServiceMatching("IOEthernetInterface");
+//    kr = IOServiceGetMatchingServices(kIOMasterPortDefault, matchDict, &iterator);
+//
+//    NSDictionary *resultInfo = nil;
+//
+//    while ((entry = IOIteratorNext(iterator)) != 0)
+//    {
+//        CFMutableDictionaryRef properties=NULL;
+//        kr = IORegistryEntryCreateCFProperties(entry,
+//                                               &properties,
+//                                               kCFAllocatorDefault,
+//                                               kNilOptions);
+//        if (properties)
+//        {
+//            resultInfo = (__bridge_transfer NSDictionary *)properties;
+//            NSString *bsdName = [resultInfo objectForKey:@"BSD Name"];
+//            NSData *macData = [resultInfo objectForKey:@"IOMACAddress"];
+//            if (!macData)
+//            {
+//                continue;
+//            }
+//
+//            NSMutableString *macAddress = [[NSMutableString alloc] init];
+//            const UInt8 *bytes = [macData bytes];
+//            for (int i=0; i<macData.length; i++)
+//            {
+//                [macAddress appendFormat:@"%02x",*(bytes+i)];
+//            }
+//
+//            //打印Mac地址
+//            //            if (bsdName && macAddress)
+//            //            {
+//            //                NSLog(@"网卡:%@\nMac地址:%@\n",bsdName,macAddress);
+//            //            }
+//            //
+//            macDeviceAddress = macAddress;
+//
+//        }
+//    }
+//
+//    IOObjectRelease(iterator);
+//
+//
+//    return macDeviceAddress;
+//
+//}
 
-    NSString *macDeviceAddress = @"";
-    kern_return_t kr;
-    CFMutableDictionaryRef matchDict;
-    io_iterator_t iterator;
-    io_registry_entry_t entry;
++(NSString *)getDeviceMacAddress{
     
-    matchDict = IOServiceMatching("IOEthernetInterface");
-    kr = IOServiceGetMatchingServices(kIOMasterPortDefault, matchDict, &iterator);
+    int                 mib[6];
+    size_t              len;
+    char                *buf;
+    unsigned char       *ptr;
+    struct if_msghdr    *ifm;
+    struct sockaddr_dl  *sdl;
     
-    NSDictionary *resultInfo = nil;
+    mib[0] = CTL_NET;
+    mib[1] = AF_ROUTE;
+    mib[2] = 0;
+    mib[3] = AF_LINK;
+    mib[4] = NET_RT_IFLIST;
     
-    while ((entry = IOIteratorNext(iterator)) != 0)
-    {
-        CFMutableDictionaryRef properties=NULL;
-        kr = IORegistryEntryCreateCFProperties(entry,
-                                               &properties,
-                                               kCFAllocatorDefault,
-                                               kNilOptions);
-        if (properties)
-        {
-            resultInfo = (__bridge_transfer NSDictionary *)properties;
-            NSString *bsdName = [resultInfo objectForKey:@"BSD Name"];
-            NSData *macData = [resultInfo objectForKey:@"IOMACAddress"];
-            if (!macData)
-            {
-                continue;
-            }
-            
-            NSMutableString *macAddress = [[NSMutableString alloc] init];
-            const UInt8 *bytes = [macData bytes];
-            for (int i=0; i<macData.length; i++)
-            {
-                [macAddress appendFormat:@"%02x",*(bytes+i)];
-            }
-            
-            //打印Mac地址
-            //            if (bsdName && macAddress)
-            //            {
-            //                NSLog(@"网卡:%@\nMac地址:%@\n",bsdName,macAddress);
-            //            }
-            //
-            macDeviceAddress = macAddress;
-            
-        }
+    if ((mib[5] = if_nametoindex("en0")) == 0) {
+        printf("Error: if_nametoindex error/n");
+        return NULL;
     }
     
-    IOObjectRelease(iterator);
+    if (sysctl(mib, 6, NULL, &len, NULL, 0) < 0) {
+        printf("Error: sysctl, take 1/n");
+        return NULL;
+    }
+    
+    if ((buf = malloc(len)) == NULL) {
+        printf("Could not allocate memory. error!/n");
+        return NULL;
+    }
+    
+    if (sysctl(mib, 6, buf, &len, NULL, 0) < 0) {
+        printf("Error: sysctl, take 2");
+        return NULL;
+    }
     
     
-    return macDeviceAddress;
+    ifm = (struct if_msghdr *)buf;
     
+    sdl = (struct sockaddr_dl *)(ifm + 1);
+    
+    ptr = (unsigned char *)LLADDR(sdl);
+    
+    
+    NSString *outstring = [NSString stringWithFormat:@"%02x:%02x:%02x:%02x:%02x:%02x", *ptr, *(ptr+1), *(ptr+2), *(ptr+3), *(ptr+4), *(ptr+5)];
+    
+    // release pointer
+    free(buf);
+    
+    return [outstring lowercaseString];
 }
 
 

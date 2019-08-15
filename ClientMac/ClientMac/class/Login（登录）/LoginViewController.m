@@ -213,7 +213,9 @@
             
         }else{
             
-            [weakself show:@"提示" andMessage:@"登录失败"];
+            NSString *msg = SafeString(responseObject[@"result"][@"msg"]);
+            
+            [weakself show:@"提示" andMessage:msg];
         }
         
     } andFailed:^(id error) {
