@@ -9,23 +9,24 @@
         <customObject id="-2" userLabel="File's Owner" customClass="HistoryRecordViewController">
             <connections>
                 <outlet property="tableView" destination="bxp-hP-bR7" id="D8B-Q0-6ZP"/>
+                <outlet property="tpoH" destination="GSh-wn-su7" id="tDx-rU-OfV"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="790" height="430"/>
+            <rect key="frame" x="0.0" y="0.0" width="790" height="500"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <scrollView autohidesScrollers="YES" horizontalLineScroll="45" horizontalPageScroll="10" verticalLineScroll="45" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wS3-Ga-c0b">
-                    <rect key="frame" x="0.0" y="36" width="790" height="334"/>
+                    <rect key="frame" x="0.0" y="36" width="790" height="404"/>
                     <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="WpT-I2-prD">
-                        <rect key="frame" x="1" y="0.0" width="788" height="333"/>
+                        <rect key="frame" x="1" y="0.0" width="788" height="403"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="43" rowSizeStyle="automatic" headerView="Iga-iI-qFQ" viewBased="YES" id="bxp-hP-bR7">
-                                <rect key="frame" x="0.0" y="0.0" width="788" height="310"/>
+                                <rect key="frame" x="0.0" y="0.0" width="788" height="380"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <size key="intercellSpacing" width="3" height="2"/>
                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -222,7 +223,7 @@
                 <constraint firstAttribute="trailing" secondItem="wS3-Ga-c0b" secondAttribute="trailing" id="hrq-d7-NV4"/>
                 <constraint firstItem="wS3-Ga-c0b" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="s1H-qy-C4O"/>
             </constraints>
-            <point key="canvasLocation" x="302" y="152"/>
+            <point key="canvasLocation" x="375" y="149"/>
         </customView>
     </objects>
 </document>

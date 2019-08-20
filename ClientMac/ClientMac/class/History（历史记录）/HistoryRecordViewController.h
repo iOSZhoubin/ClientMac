@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HistoryRecordViewController : NSViewController
 
+@property (assign,nonatomic) CGFloat top;
+
 @end
 
 NS_ASSUME_NONNULL_END

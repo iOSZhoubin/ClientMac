@@ -1,8 +1,8 @@
 //
-//  FirstShowWindowController.h
+//  FirstViewController.h
 //  ClientMac
 //
-//  Created by jumpapp1 on 2019/8/14.
+//  Created by jumpapp1 on 2019/8/20.
 //  Copyright © 2019年 zb. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FirstShowWindowController : NSWindowController
+@interface FirstViewController : NSViewController
 
 @end
 

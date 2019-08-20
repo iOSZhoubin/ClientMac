@@ -15,8 +15,6 @@
 		39417AA022FAB8F800979FD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39417A9F22FAB8F800979FD3 /* main.m */; };
 		39417AAE22FABA8100979FD3 /* FirstPageWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39417AAC22FABA8100979FD3 /* FirstPageWindowController.m */; };
 		39417AAF22FABA8100979FD3 /* FirstPageWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39417AAD22FABA8100979FD3 /* FirstPageWindowController.xib */; };
-		397849BF2303DE4700F76C65 /* FirstShowWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 397849BD2303DE4700F76C65 /* FirstShowWindowController.m */; };
-		397849C02303DE4800F76C65 /* FirstShowWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 397849BE2303DE4700F76C65 /* FirstShowWindowController.xib */; };
 		3986DA372303ADF5000F5924 /* ApplicitionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3986DA362303ADF5000F5924 /* ApplicitionModel.m */; };
 		39AA4D2E2301071D008D8386 /* AgreeInternetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D2C2301071D008D8386 /* AgreeInternetViewController.m */; };
 		39AA4D2F2301071E008D8386 /* AgreeInternetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39AA4D2D2301071D008D8386 /* AgreeInternetViewController.xib */; };
@@ -43,6 +41,10 @@
 		39AA4D7B2301495F008D8386 /* JumpCompanyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D782301495E008D8386 /* JumpCompanyModel.m */; };
 		39AA4D8023014EAF008D8386 /* NewAccountWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA4D7E23014EAF008D8386 /* NewAccountWindowController.m */; };
 		39AA4D8123014EAF008D8386 /* NewAccountWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39AA4D7F23014EAF008D8386 /* NewAccountWindowController.xib */; };
+		39B83A40230BD9DE0044A88F /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B83A3E230BD9DE0044A88F /* FirstViewController.m */; };
+		39B83A41230BD9DE0044A88F /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39B83A3F230BD9DE0044A88F /* FirstViewController.xib */; };
+		39B83A45230BD9EE0044A88F /* FirstWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B83A43230BD9EE0044A88F /* FirstWindowController.m */; };
+		39B83A46230BD9EE0044A88F /* FirstWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39B83A44230BD9EE0044A88F /* FirstWindowController.xib */; };
 		67319F2A4AD2823BC0392C65 /* libPods-ClientMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1279FEB35219605FB2EFA1CD /* libPods-ClientMac.a */; };
 /* End PBXBuildFile section */
 
@@ -63,9 +65,6 @@
 		39417AAB22FABA8100979FD3 /* FirstPageWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstPageWindowController.h; sourceTree = "<group>"; };
 		39417AAC22FABA8100979FD3 /* FirstPageWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstPageWindowController.m; sourceTree = "<group>"; };
 		39417AAD22FABA8100979FD3 /* FirstPageWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstPageWindowController.xib; sourceTree = "<group>"; };
-		397849BC2303DE4700F76C65 /* FirstShowWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstShowWindowController.h; sourceTree = "<group>"; };
-		397849BD2303DE4700F76C65 /* FirstShowWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstShowWindowController.m; sourceTree = "<group>"; };
-		397849BE2303DE4700F76C65 /* FirstShowWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstShowWindowController.xib; sourceTree = "<group>"; };
 		3986DA352303ADF5000F5924 /* ApplicitionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicitionModel.h; sourceTree = "<group>"; };
 		3986DA362303ADF5000F5924 /* ApplicitionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicitionModel.m; sourceTree = "<group>"; };
 		39AA4D2B2301071D008D8386 /* AgreeInternetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AgreeInternetViewController.h; sourceTree = "<group>"; };
@@ -110,6 +109,12 @@
 		39AA4D7D23014EAF008D8386 /* NewAccountWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewAccountWindowController.h; sourceTree = "<group>"; };
 		39AA4D7E23014EAF008D8386 /* NewAccountWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewAccountWindowController.m; sourceTree = "<group>"; };
 		39AA4D7F23014EAF008D8386 /* NewAccountWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewAccountWindowController.xib; sourceTree = "<group>"; };
+		39B83A3D230BD9DE0044A88F /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		39B83A3E230BD9DE0044A88F /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		39B83A3F230BD9DE0044A88F /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		39B83A42230BD9EE0044A88F /* FirstWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstWindowController.h; sourceTree = "<group>"; };
+		39B83A43230BD9EE0044A88F /* FirstWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstWindowController.m; sourceTree = "<group>"; };
+		39B83A44230BD9EE0044A88F /* FirstWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstWindowController.xib; sourceTree = "<group>"; };
 		BFC45D143187783890E7D9BA /* Pods-ClientMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClientMac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClientMac/Pods-ClientMac.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,9 +170,10 @@
 		39417AA722FAB9DC00979FD3 /* class */ = {
 			isa = PBXGroup;
 			children = (
+				39B83A37230BD9910044A88F /* Showwindow（首页展示界面） */,
+				39417AA822FAB9DC00979FD3 /* firstPage（网络准入） */,
 				39AA4D7C23014EAF008D8386 /* NewAccount(注册用户) */,
 				39AA4D732301495E008D8386 /* Choose(选择部门) */,
-				39417AA822FAB9DC00979FD3 /* firstPage（首页） */,
 				39AA4D5423011441008D8386 /* Login（登录） */,
 				39417AAA22FAB9DC00979FD3 /* Register（注册） */,
 				39AA4D252301063D008D8386 /* History（历史记录） */,
@@ -178,12 +184,9 @@
 			path = class;
 			sourceTree = "<group>";
 		};
-		39417AA822FAB9DC00979FD3 /* firstPage（首页） */ = {
+		39417AA822FAB9DC00979FD3 /* firstPage（网络准入） */ = {
 			isa = PBXGroup;
 			children = (
-				397849BC2303DE4700F76C65 /* FirstShowWindowController.h */,
-				397849BD2303DE4700F76C65 /* FirstShowWindowController.m */,
-				397849BE2303DE4700F76C65 /* FirstShowWindowController.xib */,
 				39417AAB22FABA8100979FD3 /* FirstPageWindowController.h */,
 				39417AAC22FABA8100979FD3 /* FirstPageWindowController.m */,
 				39417AAD22FABA8100979FD3 /* FirstPageWindowController.xib */,
@@ -191,7 +194,7 @@
 				39AA4D6023013A2B008D8386 /* FirstPageViewController.m */,
 				39AA4D5F23013A2B008D8386 /* FirstPageViewController.xib */,
 			);
-			path = "firstPage（首页）";
+			path = "firstPage（网络准入）";
 			sourceTree = "<group>";
 		};
 		39417AAA22FAB9DC00979FD3 /* Register（注册） */ = {
@@ -298,6 +301,19 @@
 			path = "NewAccount(注册用户)";
 			sourceTree = "<group>";
 		};
+		39B83A37230BD9910044A88F /* Showwindow（首页展示界面） */ = {
+			isa = PBXGroup;
+			children = (
+				39B83A42230BD9EE0044A88F /* FirstWindowController.h */,
+				39B83A43230BD9EE0044A88F /* FirstWindowController.m */,
+				39B83A44230BD9EE0044A88F /* FirstWindowController.xib */,
+				39B83A3D230BD9DE0044A88F /* FirstViewController.h */,
+				39B83A3E230BD9DE0044A88F /* FirstViewController.m */,
+				39B83A3F230BD9DE0044A88F /* FirstViewController.xib */,
+			);
+			path = "Showwindow（首页展示界面）";
+			sourceTree = "<group>";
+		};
 		4808CA6BAC32625FBB7855E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,7 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39AA4D5923011455008D8386 /* LoginViewController.xib in Resources */,
-				397849C02303DE4800F76C65 /* FirstShowWindowController.xib in Resources */,
+				39B83A41230BD9DE0044A88F /* FirstViewController.xib in Resources */,
 				39AA4D6D2301464A008D8386 /* HistoryRecordViewController.xib in Resources */,
 				39AA4D3923010747008D8386 /* DeviceInfoViewController.xib in Resources */,
 				39AA4D3423010733008D8386 /* CheckupViewController.xib in Resources */,
@@ -391,6 +407,7 @@
 				39AA4D7223014913008D8386 /* JumpRegistereViewController.xib in Resources */,
 				39AA4D7A2301495F008D8386 /* ChooseConmpanyWindowController.xib in Resources */,
 				39AA4D2F2301071E008D8386 /* AgreeInternetViewController.xib in Resources */,
+				39B83A46230BD9EE0044A88F /* FirstWindowController.xib in Resources */,
 				39AA4D6223013A2C008D8386 /* FirstPageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,12 +457,13 @@
 				39417AAE22FABA8100979FD3 /* FirstPageWindowController.m in Sources */,
 				3986DA372303ADF5000F5924 /* ApplicitionModel.m in Sources */,
 				39AA4D5823011455008D8386 /* LoginViewController.m in Sources */,
-				397849BF2303DE4700F76C65 /* FirstShowWindowController.m in Sources */,
+				39B83A45230BD9EE0044A88F /* FirstWindowController.m in Sources */,
 				39AA4D5123010941008D8386 /* SecurityNSString.m in Sources */,
 				39AA4D3323010733008D8386 /* CheckupViewController.m in Sources */,
 				39AA4D5223010941008D8386 /* JumpPublicAction.m in Sources */,
 				39AA4D4F23010941008D8386 /* CalenarManager.m in Sources */,
 				39AA4D2E2301071D008D8386 /* AgreeInternetViewController.m in Sources */,
+				39B83A40230BD9DE0044A88F /* FirstViewController.m in Sources */,
 				39AA4D792301495F008D8386 /* ChooseConmpanyWindowController.m in Sources */,
 				39AA4D6C2301464A008D8386 /* HistoryRecordViewController.m in Sources */,
 				39AA4D6323013A2C008D8386 /* FirstPageViewController.m in Sources */,

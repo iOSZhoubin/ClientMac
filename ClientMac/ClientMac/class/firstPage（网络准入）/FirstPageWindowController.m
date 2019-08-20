@@ -35,10 +35,6 @@
 - (void)windowDidLoad {
     [super windowDidLoad];
     
-    AppDelegate *appdelegate = [NSApp delegate];
-    
-    appdelegate.windowVc = self;
-    
     [self.window setContentSize:NSMakeSize(800, 600)];
     
     self.window.restorable = NO;
@@ -85,6 +81,8 @@
     [self.internetBtn setImage:[NSImage imageNamed:@"defaultNet"]];
     [self.historyBtn setImage:[NSImage imageNamed:@"historySelect"]];
     [self.deviceBtn setImage:[NSImage imageNamed:@"defaultDevice"]];
+    
+    self.historyVc.top = 60;
     
     [self.customerView addSubview:self.historyVc.view];
 }

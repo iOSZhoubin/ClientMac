@@ -21,22 +21,13 @@
     
     [self addSmallicon];
 
-//    self.mainWC = [[FirstPageWindowController alloc]initWithWindowNibName:@"FirstPageWindowController"];
-//
-//    [[self.mainWC window] center];
-//
-//    [self.mainWC.window setBackgroundColor:[NSColor whiteColor]];
-//
-//    [self.mainWC.window orderFront:nil];
-    
-    
-    self.mainWC1 = [[FirstShowWindowController alloc]initWithWindowNibName:@"FirstShowWindowController"];
-    
-    [[self.mainWC1 window] center];
-    
-    [self.mainWC1.window setBackgroundColor:[NSColor whiteColor]];
-    
-    [self.mainWC1.window orderFront:nil];
+    self.mainWC = [[FirstWindowController alloc]initWithWindowNibName:@"FirstWindowController"];
+
+    [[self.mainWC window] center];
+
+    [self.mainWC.window setBackgroundColor:[NSColor whiteColor]];
+
+    [self.mainWC.window orderFront:nil];
 }
 
 

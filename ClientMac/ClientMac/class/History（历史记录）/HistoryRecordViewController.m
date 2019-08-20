@@ -15,11 +15,20 @@
 @property (weak) IBOutlet NSTableView *tableView;
 //数据源
 @property (strong,nonatomic) NSMutableArray *dataArray;
+//距上高度
+@property (weak) IBOutlet NSLayoutConstraint *tpoH;
 
 @end
 
 @implementation HistoryRecordViewController
 
+
+-(void)viewWillAppear{
+    
+    [super viewWillAppear];
+    
+    self.tpoH.constant = self.top;
+}
 
 -(NSMutableArray *)dataArray{
     
@@ -47,7 +56,6 @@
     [self.tableView reloadData];
     
     [KNotification addObserver:self selector:@selector(notifi:) name:@"HistoryRecordViewController" object:nil];
-
 }
 
 
