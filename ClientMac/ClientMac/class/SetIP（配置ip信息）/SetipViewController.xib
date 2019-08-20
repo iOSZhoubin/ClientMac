@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SetipViewController">
+            <connections>
+                <outlet property="ipAddress" destination="22O-8t-Iq9" id="kjQ-1W-k2w"/>
+                <outlet property="port" destination="eNf-Un-AWA" id="4sb-2Q-BDc"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="0cK-Vw-RIO">
+                    <rect key="frame" x="90" y="20" width="300" height="232"/>
+                    <subviews>
+                        <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="22O-8t-Iq9">
+                            <rect key="frame" x="58" y="167" width="232" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Vje-3l-MbB"/>
+                            </constraints>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" focusRingType="none" placeholderString="请输入(必填)" bezelStyle="round" id="Qsr-zq-Maq">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HAc-dg-jdi">
+                            <rect key="frame" x="8" y="172" width="44" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="DvJ-gh-1NO"/>
+                                <constraint firstAttribute="width" constant="40" id="LOa-0S-GgP"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Nra-z6-eVt"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="WMg-bb-pMv"/>
+                            </constraints>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="IP地址" id="mUI-QW-UOL">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5j9-cp-Tz4">
+                            <rect key="frame" x="118" y="9" width="64" height="19"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="64" id="2GQ-3t-lIQ"/>
+                                <constraint firstAttribute="height" constant="18" id="Wem-JL-T3C"/>
+                            </constraints>
+                            <buttonCell key="cell" type="roundRect" title="配置完成" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gCP-7n-zT7">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="cellTitle"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="finishAction:" target="-2" id="r7v-ze-OJM"/>
+                            </connections>
+                        </button>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Osb-Vx-9E6">
+                            <rect key="frame" x="8" y="127" width="44" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Ea9-Mn-GIK"/>
+                                <constraint firstAttribute="width" constant="40" id="ZYr-AT-ISp"/>
+                            </constraints>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="端口号" id="P0H-Hz-D9m">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eNf-Un-AWA">
+                            <rect key="frame" x="58" y="125" width="232" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="z8d-xl-hjR"/>
+                            </constraints>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" focusRingType="none" placeholderString="请输入端口号(必填)" bezelStyle="round" id="7LO-Rt-eDY">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="22O-8t-Iq9" firstAttribute="top" secondItem="0cK-Vw-RIO" secondAttribute="top" constant="35" id="20e-L9-5IY"/>
+                        <constraint firstItem="Osb-Vx-9E6" firstAttribute="leading" secondItem="0cK-Vw-RIO" secondAttribute="leading" constant="10" id="2i4-R2-CYY"/>
+                        <constraint firstItem="eNf-Un-AWA" firstAttribute="top" secondItem="22O-8t-Iq9" secondAttribute="bottom" constant="12" id="4Ck-KZ-i6c"/>
+                        <constraint firstItem="eNf-Un-AWA" firstAttribute="leading" secondItem="Osb-Vx-9E6" secondAttribute="trailing" constant="8" id="GAm-FB-odi"/>
+                        <constraint firstItem="HAc-dg-jdi" firstAttribute="top" secondItem="0cK-Vw-RIO" secondAttribute="top" constant="40" id="Nji-vZ-VyN"/>
+                        <constraint firstItem="22O-8t-Iq9" firstAttribute="leading" secondItem="HAc-dg-jdi" secondAttribute="trailing" constant="8" id="SGd-Vf-a9Z"/>
+                        <constraint firstItem="22O-8t-Iq9" firstAttribute="leading" secondItem="HAc-dg-jdi" secondAttribute="trailing" constant="8" id="e13-pP-fRf"/>
+                        <constraint firstAttribute="trailing" secondItem="22O-8t-Iq9" secondAttribute="trailing" constant="10" id="f2t-2d-wbj"/>
+                        <constraint firstItem="HAc-dg-jdi" firstAttribute="leading" secondItem="0cK-Vw-RIO" secondAttribute="leading" constant="10" id="n4s-Ea-mlH"/>
+                        <constraint firstAttribute="width" constant="300" id="tVy-NW-ejy"/>
+                        <constraint firstAttribute="bottom" secondItem="5j9-cp-Tz4" secondAttribute="bottom" constant="10" id="tjG-Xg-bdO"/>
+                        <constraint firstItem="Osb-Vx-9E6" firstAttribute="top" secondItem="HAc-dg-jdi" secondAttribute="bottom" constant="25" id="txw-vq-TgV"/>
+                        <constraint firstAttribute="trailing" secondItem="eNf-Un-AWA" secondAttribute="trailing" constant="10" id="uns-W7-e9K"/>
+                        <constraint firstItem="5j9-cp-Tz4" firstAttribute="centerX" secondItem="0cK-Vw-RIO" secondAttribute="centerX" id="yAR-Pn-PYW"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="0cK-Vw-RIO" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="av9-hj-nFo"/>
+                <constraint firstItem="0cK-Vw-RIO" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="lCE-tG-l5E"/>
+                <constraint firstAttribute="bottom" secondItem="0cK-Vw-RIO" secondAttribute="bottom" constant="20" id="q9B-AY-qXk"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>

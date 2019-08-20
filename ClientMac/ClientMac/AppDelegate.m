@@ -28,6 +28,18 @@
     [self.mainWC.window setBackgroundColor:[NSColor whiteColor]];
 
     [self.mainWC.window orderFront:nil];
+    
+
+    NSDictionary *mudict = @{
+                             @"deviceId":@"",
+                             @"userId":@"",
+                             };
+    
+    //存入数组并同步
+    [[NSUserDefaults standardUserDefaults] setObject:mudict forKey:@"mac_userMessage"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    
 }
 
 

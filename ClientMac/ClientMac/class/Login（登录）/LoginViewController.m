@@ -16,10 +16,10 @@
 
 @property (strong,nonatomic) NewAccountWindowController *accountWC;
 
-//ip地址
-@property (weak) IBOutlet NSTextField *ipcontent;
-//端口
-@property (weak) IBOutlet NSTextField *portcontent;
+////ip地址
+//@property (weak) IBOutlet NSTextField *ipcontent;
+////端口
+//@property (weak) IBOutlet NSTextField *portcontent;
 //账号
 @property (weak) IBOutlet NSTextField *accountcontent;
 //密码or验证码的title
@@ -82,8 +82,6 @@
     if(defaultDict){
         
         self.accountcontent.stringValue = SafeString(defaultDict[@"userName"]);
-        self.portcontent.stringValue = SafeString(defaultDict[@"port"]);
-        self.ipcontent.stringValue = SafeString(defaultDict[@"ipAddress"]);
     }
     
     //获取设备唯一识别码
@@ -110,24 +108,11 @@
 
 - (IBAction)LoginAction:(NSButton *)sender {
     
-    if (self.ipcontent.stringValue.length < 1){
-        
-        [self show:@"提示" andMessage:@"请输入IP地址"];
-        
-        return;
-        
-    }else if (self.portcontent.stringValue.length < 1){
-        
-        [self show:@"提示" andMessage:@"请输入端口号"];
-        
-        return;
-        
-    }else if(self.accountcontent.stringValue.length < 1){
+    if(self.accountcontent.stringValue.length < 1){
         
         [self show:@"提示" andMessage:@"请输入用户名"];
         
         return;
-        
     }
     
     
@@ -282,6 +267,8 @@
         
     }
     
+    
+    //同步
     NSDictionary *mudict = @{
                              @"deviceId":SafeString(self.deviceCode),
                              @"userId":SafeString(userId),
@@ -289,6 +276,18 @@
     
     //存入数组并同步
     [[NSUserDefaults standardUserDefaults] setObject:mudict forKey:@"mac_userMessage"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    //同步
+    NSDictionary *defaultDict = [[NSUserDefaults standardUserDefaults] objectForKey:@"mac_IpInfo"];
+    
+    NSDictionary *mudict1 = @{
+                             @"userName":SafeString(self.accountcontent.stringValue),
+                             @"ipAddress":SafeString(defaultDict[@"ipAddress"]),
+                             @"port":SafeString(defaultDict[@"port"]),
+                             };
+    //存入数组并同步
+    [[NSUserDefaults standardUserDefaults] setObject:mudict1 forKey:@"mac_IpInfo"];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
@@ -346,14 +345,6 @@
 #pragma mark --- 校验手机号是否为内网号
 
 -(void)ischeck{
-    
-    if(self.ipcontent.stringValue.length < 1 || self.portcontent.stringValue.length < 1){
-        
-        [self show:@"提示" andMessage:@"ip地址或端口号不能为空"];
-        
-        return;
-        
-    }
     
     L2CWeakSelf(self);
     
@@ -436,11 +427,6 @@
 -(void)getLoginType{
     
     L2CWeakSelf(self);
-    
-    if(self.ipcontent.stringValue.length < 1){
-        
-        return;
-    }
     
     [AFNHelper macPost:Mac_GetloginType parameters:nil success:^(id responseObject) {
         
@@ -655,21 +641,14 @@
 #pragma mark --- 获取服务器配置
 
 - (IBAction)getServerSet:(NSButton *)sender {
-    
-    if(self.ipcontent.stringValue.length < 1 || self.portcontent.stringValue.length < 1){
-        
-        [self show:@"提示" andMessage:@"ip地址或端口号不能为空"];
-        
-        return;
-        
-    }
-    
+
+    NSDictionary *defaultDict = [[NSUserDefaults standardUserDefaults] objectForKey:@"mac_IpInfo"];
+
     NSDictionary *mudict = @{
                              @"userName":SafeString(self.accountcontent.stringValue),
-                             @"ipAddress":SafeString(self.ipcontent.stringValue),
-                             @"port":SafeString(self.portcontent.stringValue),
+                             @"ipAddress":SafeString(defaultDict[@"ipAddress"]),
+                             @"port":SafeString(defaultDict[@"port"]),
                              };
-    
     //存入数组并同步
     [[NSUserDefaults standardUserDefaults] setObject:mudict forKey:@"mac_IpInfo"];
     [[NSUserDefaults standardUserDefaults] synchronize];
@@ -705,17 +684,11 @@
 
 - (IBAction)newAccount:(NSButton *)sender {
     
-    if(self.ipcontent.stringValue.length < 1 || self.portcontent.stringValue.length < 1){
-        
-        [self show:@"提示" andMessage:@"ip地址或端口号不能为空"];
-        
-        return;
-        
-    }
+    NSDictionary *defaultDict = [[NSUserDefaults standardUserDefaults] objectForKey:@"mac_IpInfo"];
+
+    self.accountWC.ipAddress = SafeString(defaultDict[@"ipAddress"]);
     
-    self.accountWC.ipAddress = self.ipcontent.stringValue;
-    
-    self.accountWC.port = self.portcontent.stringValue;
+    self.accountWC.port = SafeString(defaultDict[@"port"]);
     
     [self.accountWC.window orderFront:nil];//显示要跳转的窗口
     

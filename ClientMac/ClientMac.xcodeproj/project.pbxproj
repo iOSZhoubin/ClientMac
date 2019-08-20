@@ -45,6 +45,8 @@
 		39B83A41230BD9DE0044A88F /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39B83A3F230BD9DE0044A88F /* FirstViewController.xib */; };
 		39B83A45230BD9EE0044A88F /* FirstWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B83A43230BD9EE0044A88F /* FirstWindowController.m */; };
 		39B83A46230BD9EE0044A88F /* FirstWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39B83A44230BD9EE0044A88F /* FirstWindowController.xib */; };
+		39B83A4B230BE4F60044A88F /* SetipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B83A49230BE4F60044A88F /* SetipViewController.m */; };
+		39B83A4C230BE4F60044A88F /* SetipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39B83A4A230BE4F60044A88F /* SetipViewController.xib */; };
 		67319F2A4AD2823BC0392C65 /* libPods-ClientMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1279FEB35219605FB2EFA1CD /* libPods-ClientMac.a */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +117,9 @@
 		39B83A42230BD9EE0044A88F /* FirstWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstWindowController.h; sourceTree = "<group>"; };
 		39B83A43230BD9EE0044A88F /* FirstWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstWindowController.m; sourceTree = "<group>"; };
 		39B83A44230BD9EE0044A88F /* FirstWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstWindowController.xib; sourceTree = "<group>"; };
+		39B83A48230BE4F60044A88F /* SetipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetipViewController.h; sourceTree = "<group>"; };
+		39B83A49230BE4F60044A88F /* SetipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetipViewController.m; sourceTree = "<group>"; };
+		39B83A4A230BE4F60044A88F /* SetipViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetipViewController.xib; sourceTree = "<group>"; };
 		BFC45D143187783890E7D9BA /* Pods-ClientMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClientMac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClientMac/Pods-ClientMac.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,6 +177,7 @@
 			children = (
 				39B83A37230BD9910044A88F /* Showwindow（首页展示界面） */,
 				39417AA822FAB9DC00979FD3 /* firstPage（网络准入） */,
+				39B83A47230BE4D80044A88F /* SetIP（配置ip信息） */,
 				39AA4D7C23014EAF008D8386 /* NewAccount(注册用户) */,
 				39AA4D732301495E008D8386 /* Choose(选择部门) */,
 				39AA4D5423011441008D8386 /* Login（登录） */,
@@ -314,6 +320,16 @@
 			path = "Showwindow（首页展示界面）";
 			sourceTree = "<group>";
 		};
+		39B83A47230BE4D80044A88F /* SetIP（配置ip信息） */ = {
+			isa = PBXGroup;
+			children = (
+				39B83A48230BE4F60044A88F /* SetipViewController.h */,
+				39B83A49230BE4F60044A88F /* SetipViewController.m */,
+				39B83A4A230BE4F60044A88F /* SetipViewController.xib */,
+			);
+			path = "SetIP（配置ip信息）";
+			sourceTree = "<group>";
+		};
 		4808CA6BAC32625FBB7855E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +422,7 @@
 				39417A9D22FAB8F800979FD3 /* MainMenu.xib in Resources */,
 				39AA4D7223014913008D8386 /* JumpRegistereViewController.xib in Resources */,
 				39AA4D7A2301495F008D8386 /* ChooseConmpanyWindowController.xib in Resources */,
+				39B83A4C230BE4F60044A88F /* SetipViewController.xib in Resources */,
 				39AA4D2F2301071E008D8386 /* AgreeInternetViewController.xib in Resources */,
 				39B83A46230BD9EE0044A88F /* FirstWindowController.xib in Resources */,
 				39AA4D6223013A2C008D8386 /* FirstPageViewController.xib in Resources */,
@@ -464,6 +481,7 @@
 				39AA4D4F23010941008D8386 /* CalenarManager.m in Sources */,
 				39AA4D2E2301071D008D8386 /* AgreeInternetViewController.m in Sources */,
 				39B83A40230BD9DE0044A88F /* FirstViewController.m in Sources */,
+				39B83A4B230BE4F60044A88F /* SetipViewController.m in Sources */,
 				39AA4D792301495F008D8386 /* ChooseConmpanyWindowController.m in Sources */,
 				39AA4D6C2301464A008D8386 /* HistoryRecordViewController.m in Sources */,
 				39AA4D6323013A2C008D8386 /* FirstPageViewController.m in Sources */,

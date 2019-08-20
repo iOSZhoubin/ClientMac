@@ -234,16 +234,45 @@
                         <constraint firstAttribute="bottom" secondItem="o9a-Z9-rVi" secondAttribute="bottom" id="kzg-lR-IaG"/>
                     </constraints>
                 </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2FO-a9-NOj">
+                    <rect key="frame" x="524" y="578" width="68" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="NNW-T3-xzo"/>
+                        <constraint firstAttribute="height" constant="17" id="qQs-NH-1qN"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="配置IP信息" id="GAg-wJ-siC">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="LrZ-9w-1tw">
+                    <rect key="frame" x="530" y="575" width="70" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="TYp-z5-UJQ"/>
+                        <constraint firstAttribute="width" constant="70" id="zXg-tw-qdj"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="36U-og-yYu">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="setAction:" target="-2" id="RDO-wI-Y8g"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="lLo-Mf-tfA" secondAttribute="bottom" constant="20" id="0Mq-7I-HtV"/>
                 <constraint firstItem="gQf-MW-5Bk" firstAttribute="leading" secondItem="B1X-4b-XjK" secondAttribute="trailing" constant="10" id="0Un-KC-eAN"/>
+                <constraint firstItem="2FO-a9-NOj" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="5" id="0Ws-kf-exm"/>
                 <constraint firstAttribute="trailing" secondItem="gQf-MW-5Bk" secondAttribute="trailing" constant="40" id="1ew-AP-qoR"/>
                 <constraint firstAttribute="bottom" secondItem="6od-G1-Suw" secondAttribute="bottom" id="20V-f9-ctC"/>
                 <constraint firstAttribute="trailing" secondItem="OJO-56-Dfi" secondAttribute="trailing" constant="300" id="3HK-Qa-6JJ"/>
                 <constraint firstItem="mBx-79-YUb" firstAttribute="centerY" secondItem="lLo-Mf-tfA" secondAttribute="centerY" id="3t3-Eh-O7j"/>
                 <constraint firstItem="MhQ-TK-boQ" firstAttribute="centerY" secondItem="lLo-Mf-tfA" secondAttribute="centerY" id="4g5-hl-7q1"/>
+                <constraint firstItem="ctQ-EI-10P" firstAttribute="leading" secondItem="2FO-a9-NOj" secondAttribute="trailing" constant="20" id="4hn-MD-Dge"/>
                 <constraint firstItem="mBx-79-YUb" firstAttribute="leading" secondItem="qxa-zn-uO5" secondAttribute="trailing" constant="30" id="6Kh-rw-WUv"/>
+                <constraint firstItem="ctQ-EI-10P" firstAttribute="leading" secondItem="LrZ-9w-1tw" secondAttribute="trailing" constant="10" id="7fT-LH-1qw"/>
                 <constraint firstAttribute="trailing" secondItem="VxW-zV-1WB" secondAttribute="trailing" constant="200" id="8Fp-Va-gPB"/>
                 <constraint firstAttribute="bottom" secondItem="B1X-4b-XjK" secondAttribute="bottom" constant="70" id="8tz-Gt-Nr2"/>
                 <constraint firstItem="cHD-qn-IZz" firstAttribute="height" secondItem="lLo-Mf-tfA" secondAttribute="height" id="9Yq-XP-c87"/>
@@ -259,6 +288,7 @@
                 <constraint firstItem="6od-G1-Suw" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="UFj-4A-gr2"/>
                 <constraint firstItem="Fsr-dB-ac4" firstAttribute="centerY" secondItem="lLo-Mf-tfA" secondAttribute="centerY" id="VvH-oX-GYs"/>
                 <constraint firstItem="MhQ-TK-boQ" firstAttribute="height" secondItem="lLo-Mf-tfA" secondAttribute="height" id="W4g-lN-WU3"/>
+                <constraint firstItem="LrZ-9w-1tw" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="5" id="X7N-MU-ts1"/>
                 <constraint firstItem="Fsr-dB-ac4" firstAttribute="height" secondItem="lLo-Mf-tfA" secondAttribute="height" id="XKE-3T-DkL"/>
                 <constraint firstItem="qxa-zn-uO5" firstAttribute="leading" secondItem="lLo-Mf-tfA" secondAttribute="trailing" constant="8" id="YCG-Qx-5jg"/>
                 <constraint firstItem="cHD-qn-IZz" firstAttribute="centerY" secondItem="lLo-Mf-tfA" secondAttribute="centerY" id="aLo-DO-QcX"/>
@@ -275,7 +305,7 @@
                 <constraint firstAttribute="bottom" secondItem="gQf-MW-5Bk" secondAttribute="bottom" constant="70" id="pL9-sB-cfd"/>
                 <constraint firstAttribute="trailing" secondItem="6od-G1-Suw" secondAttribute="trailing" id="uge-OR-W9f"/>
             </constraints>
-            <point key="canvasLocation" x="141" y="144.5"/>
+            <point key="canvasLocation" x="141" y="144"/>
         </customView>
     </objects>
     <resources>

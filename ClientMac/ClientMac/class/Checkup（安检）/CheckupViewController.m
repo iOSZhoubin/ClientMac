@@ -73,8 +73,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-        
-    [self getAllCheck];
 }
 
 
@@ -323,11 +321,14 @@
             
             weakself.serverIp = dict[@"serverIp"];//服务器ip地址
             
-            [weakself compareIpandTime];
-            
         }else{
             
+            weakself.serverTime = @"";//服务器时间
+            
+            weakself.serverIp = @"";//服务器ip地址
         }
+        
+        [weakself compareIpandTime];
         
     } andFailed:^(id error) {
         
@@ -340,6 +341,8 @@
     
     //获取系统当前时间
     NSDate *datenow = [NSDate new];
+    
+    NSString *deviceDate = [DateCalculater startTimeFromDate:datenow];
     
     //时间转时间戳
     NSInteger nowNum = [[NSNumber numberWithDouble:[datenow timeIntervalSince1970]] integerValue];
@@ -363,7 +366,7 @@
         
     }else{
         
-        NSString *ipaddress = [NSString stringWithFormat:@"\n设备IP地址异常,服务器设备IP为:%@",self.serverIp];
+        NSString *ipaddress = [NSString stringWithFormat:@"\n设备IP地址异常,设备IP为:%@,服务器设备IP为:%@",macIp,self.serverIp];
         
         [self.contentStr appendFormat:@"%@", ipaddress];
         
@@ -371,9 +374,9 @@
         
     }
     
-    if(reductionNum > 300){
+    if(reductionNum > 300 || self.serverTime.length < 1){
         
-        NSString *time = [NSString stringWithFormat:@"\n设备时间检查异常,服务器时间为:%@",self.serverTime];
+        NSString *time = [NSString stringWithFormat:@"\n设备时间检查异常,设备时间为:%@,服务器时间为:%@",deviceDate,self.serverTime];
         
         [self.contentStr appendFormat:@"%@", time];
         

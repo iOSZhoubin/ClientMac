@@ -79,7 +79,7 @@
 
 -(CGFloat)tableView:(NSTableView *)tableView heightOfRow:(NSInteger)row{
     
-    return 75;
+    return 80;
 }
 
 -(NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row{
