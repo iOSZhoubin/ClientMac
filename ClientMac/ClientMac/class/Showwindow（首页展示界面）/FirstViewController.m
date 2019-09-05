@@ -47,6 +47,8 @@
     
     [super viewWillAppear];
     
+//waring 此处需要添加接口判断，该设备是否认证成功
+    
     //如果有IP地址和端口号，那么就直接赋值
     NSDictionary *defaultDict = [[NSUserDefaults standardUserDefaults] objectForKey:@"mac_userMessage"];
     NSDictionary *userDict = [[NSUserDefaults standardUserDefaults] objectForKey:@"mac_IpInfo"];

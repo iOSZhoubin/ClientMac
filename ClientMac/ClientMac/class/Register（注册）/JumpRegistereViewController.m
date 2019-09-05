@@ -510,7 +510,7 @@
  
             self.deviceType.enabled = NO;
            
-            self.deviceType.stringValue = @"MacOS";
+            self.deviceType.stringValue = @"macOS";
             
         }else if ([title isEqualToString:@"备注"]){
             
@@ -569,7 +569,7 @@
             //电子邮箱
             weakself.mail.stringValue = SafeString(responseObject[@"result"][@"email"]);
             //设备类型
-            weakself.deviceType.stringValue = @"MacOS";
+            weakself.deviceType.stringValue = @"macOS";
             //电话
             weakself.phoneNum.stringValue = SafeString(responseObject[@"result"][@"phoneNumber"]);
             //设备位置

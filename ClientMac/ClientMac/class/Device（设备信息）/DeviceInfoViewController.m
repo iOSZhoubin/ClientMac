@@ -76,7 +76,7 @@
             //电子邮箱
             weakself.email.stringValue = SafeString(responseObject[@"result"][@"email"]);
             //设备类型
-            weakself.type.stringValue = @"MacOS";
+            weakself.type.stringValue = @"macOS";
             //电话
             weakself.phoneNum.stringValue = SafeString(responseObject[@"result"][@"phoneNumber"]);
             //设备位置

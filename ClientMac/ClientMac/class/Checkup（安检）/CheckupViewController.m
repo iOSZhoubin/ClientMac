@@ -172,7 +172,6 @@
             if ([type isEqualToString:@"mobilemustprocesscheck"]){
                 
                 [weakself.processY addObjectsFromArray:array];
-                
             }
             
             if ([type isEqualToString:@"mobileprogibitedprocesscheck"]){
@@ -238,7 +237,7 @@
                     
                     [self.yesStr appendFormat:@"%@", [NSString stringWithFormat:@"%@,",proName]];
                     
-                    [self.muArray addObject:proName];
+                    [self.muArray addObject:self.processY[i]];
                 }
             }
         }
@@ -261,16 +260,14 @@
                 
                 [self.noStr appendFormat:@"%@", [NSString stringWithFormat:@"%@,",proName]];
                 
-                [self.muArray addObject:proName];
+                [self.muArray addObject:self.processY[i]];
                 
                 break;
             }
         }
     }
     
-    
     self.contentStr = [NSMutableString string];
-    
     
     if(self.yesStr.length > 0){
         
