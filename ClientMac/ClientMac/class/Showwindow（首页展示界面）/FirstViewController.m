@@ -113,7 +113,7 @@
             [KNotification postNotificationName:@"FirstPageViewController" object:nil userInfo:@{@"title":@"登录"}];
         }
         
-        [self.firstPageWc.window orderFront:nil];//显示要跳转的窗口
+        [self.firstPageWc.window orderFront:nil];//显示要跳转的窗口、
         
         [[self.firstPageWc window] center];//显示在屏幕中间
         

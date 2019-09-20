@@ -87,7 +87,7 @@
     NSString *title = SafeString(note.userInfo[@"title"]);
     
     if([title isEqualToString:@"注册"]){
-        
+                 
         self.ischeck = SafeString(note.userInfo[@"isCheck"]);
 
     }

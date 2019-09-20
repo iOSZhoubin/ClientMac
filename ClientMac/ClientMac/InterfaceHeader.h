@@ -35,6 +35,8 @@
 #define Mac_Registed @"/mobile/registUser.action"
 //查看设备是否在线
 #define Mac_DeviceisOnline @"/mobile/getMachineIsOnline.action"
+//上报告警信息
+#define Mac_Waring @"/mobile/setWarnInfo.action"
 
 
 #endif /* InterfaceHeader_h */

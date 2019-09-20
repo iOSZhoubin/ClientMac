@@ -491,8 +491,38 @@
     }else{
         
         [self show:@"提示" andMessage:@"检查异常,通过后方可入网"];
+        
+        [self setWaring];
     }
 }
+
+#pragma mark --- 上报告警信息
+
+-(void)setWaring{
+    
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    
+    NSDictionary *defaultDict = [[NSUserDefaults standardUserDefaults] objectForKey:@"mac_userMessage"];
+    NSDictionary *ipInfo = [[NSUserDefaults standardUserDefaults] objectForKey:@"mac_IpInfo"];
+    
+    NSString *ipAddress = SafeString(ipInfo[@"ipAddress"]);
+    NSString *deviceId = SafeString(defaultDict[@"deviceId"]);
+    
+    parameters[@"ip"] = ipAddress;
+    parameters[@"sid"] = deviceId;
+    parameters[@"level"] = @"3";
+    parameters[@"content"] = [NSString stringWithFormat:@"ip:%@,安检失败",ipAddress];
+    parameters[@"warn_type"] = @"303";
+
+    [AFNHelper macPost:Mac_Waring parameters:parameters success:^(id responseObject) {
+        
+        
+        
+    } andFailed:^(id error) {
+        
+    }];
+}
+
 
 #pragma mark --- 提示框
 
