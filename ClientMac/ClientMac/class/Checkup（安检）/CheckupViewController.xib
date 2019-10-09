@@ -17,19 +17,19 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="XlQ-Bs-Ump">
-            <rect key="frame" x="0.0" y="0.0" width="599" height="448"/>
+            <rect key="frame" x="0.0" y="0.0" width="642" height="448"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9y7-bI-1Fr">
-                    <rect key="frame" x="305" y="388" width="137" height="31"/>
+                    <rect key="frame" x="326" y="291" width="148" height="128"/>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="done_07" id="EIB-VZ-eSJ"/>
                 </imageView>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VlW-3f-3c4">
-                    <rect key="frame" x="452" y="388" width="137" height="31"/>
+                    <rect key="frame" x="484" y="291" width="148" height="128"/>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="done_09" id="g0E-l2-4NH"/>
                 </imageView>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OIA-xp-NCo">
-                    <rect key="frame" x="253" y="13" width="92" height="32"/>
+                    <rect key="frame" x="275" y="13" width="92" height="32"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="RW5-rN-biI"/>
                         <constraint firstAttribute="width" constant="80" id="rVD-mE-g1O"/>
@@ -43,7 +43,7 @@
                     </connections>
                 </button>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lam-Uf-iXd">
-                    <rect key="frame" x="450" y="341" width="141" height="17"/>
+                    <rect key="frame" x="482" y="244" width="152" height="17"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="17" id="tj8-1O-opY"/>
                     </constraints>
@@ -54,18 +54,18 @@
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gvT-Kg-Fmy">
-                    <rect key="frame" x="303" y="341" width="141" height="17"/>
+                    <rect key="frame" x="324" y="244" width="152" height="17"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="17" id="SDw-bu-1P7"/>
                     </constraints>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" alignment="center" title="服务器IP地址检查" id="cni-Tr-YfJ">
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" alignment="center" title="IP\Mac绑定检查" id="cni-Tr-YfJ">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TpV-U7-U5W">
-                    <rect key="frame" x="155" y="341" width="142" height="17"/>
+                    <rect key="frame" x="166" y="244" width="152" height="17"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="17" id="kh1-nR-0ay"/>
                     </constraints>
@@ -76,7 +76,7 @@
                     </textFieldCell>
                 </textField>
                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="o4k-hO-WCC">
-                    <rect key="frame" x="18" y="166" width="563" height="120"/>
+                    <rect key="frame" x="18" y="69" width="606" height="120"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="120" id="80N-kC-aqz"/>
                     </constraints>
@@ -87,21 +87,21 @@
                     </textFieldCell>
                 </textField>
                 <progressIndicator wantsLayer="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="QDe-1f-6Oc">
-                    <rect key="frame" x="20" y="300" width="559" height="22"/>
+                    <rect key="frame" x="20" y="203" width="602" height="22"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="VXL-fe-hNb"/>
                     </constraints>
                 </progressIndicator>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="da2-z2-lwK">
-                    <rect key="frame" x="10" y="388" width="137" height="31"/>
+                    <rect key="frame" x="10" y="291" width="148" height="128"/>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="done_03" id="Ccu-TF-Ibc"/>
                 </imageView>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xnz-2a-L39">
-                    <rect key="frame" x="157" y="388" width="138" height="31"/>
+                    <rect key="frame" x="168" y="291" width="148" height="128"/>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="done_05" id="qL8-CS-Eed"/>
                 </imageView>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Lgk-wa-47k">
-                    <rect key="frame" x="8" y="341" width="141" height="17"/>
+                    <rect key="frame" x="8" y="244" width="152" height="17"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="17" id="cYR-eU-FtJ"/>
                     </constraints>

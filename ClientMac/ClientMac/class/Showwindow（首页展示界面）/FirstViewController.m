@@ -70,6 +70,11 @@
         [self.loginBtn setImage:[NSImage imageNamed:@"loginBtn"]];
         self.isLogin = NO;
     }
+    
+    NSString *macAddress = [JumpPublicAction getDeviceMacAddress];
+    
+    NSLog(@"%@",macAddress);
+
 }
 
 
